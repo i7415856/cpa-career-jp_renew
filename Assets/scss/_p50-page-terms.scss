@@ -1,0 +1,14 @@
+.pageTerms {
+	.pageTerms__detail {
+		padding: 7.7rem 0 7.1rem;
+
+		@media #{$tab} {
+			padding: 5.5rem 0 5.3rem;
+		}
+	}
+
+	span.-bold {
+		font-family: 'YuGothicBold';
+		font-weight: 900;
+	}
+}

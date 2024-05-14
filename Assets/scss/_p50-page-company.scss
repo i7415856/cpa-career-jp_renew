@@ -1,0 +1,157 @@
+.pageCompany {
+  .pageCompany__about {
+    padding:9.1rem 0 5rem;
+
+    @media #{$tab} {
+      padding: 5.3rem 0 5rem;
+    }
+
+    .about__tbl {
+      border-top: 0.1rem solid $gray_d0d;
+
+      dl {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        display: flex;
+        border-bottom: 0.1rem solid $gray_d0d;
+
+        @media #{$tab} {
+          font-size: 1.4rem;
+          line-height: 1.4;
+        }
+
+        dt {
+          font-weight: 700;
+          width: 20rem;
+          padding: 2.3rem 2.2rem;
+          display: flex;
+
+          @media #{$tab} {
+            width: 10.1rem;
+            padding: 1.7rem 1.5rem;
+          }
+        }
+
+        dd {
+          font-weight: 500;
+          width: calc(100% - 20rem);
+          display: flex;
+          align-items: center;
+          padding: 2.3rem 0;
+
+          @media #{$tab} {
+            width: calc(100% - 10.1rem);
+            padding: 1.7rem 0;
+          }
+        }
+      }
+    }
+
+    .about__gallery {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.1rem solid $gray_d0d;
+      padding: 2.5rem 2.3rem 2.5rem 3rem;
+
+      @media #{$tab} {
+        padding: 2rem 0;
+      }
+
+      .gallery__img01 {
+        width: 51%;
+      }
+
+      .gallery__img02 {
+        width: 46%;
+      }
+    }
+  }
+
+  .pageCompany__access {
+    padding: 4.1rem 0 8rem;
+
+    @media #{$tab} {
+      padding: 6.3rem 0 6rem;
+    }
+
+    .access__intro {
+      margin-bottom: 5.8rem;
+
+      @media #{$tab} {
+        margin-bottom: 5rem;
+      }
+
+      .intro__txt {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 3.2rem;
+
+        @media #{$tab} {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          margin-bottom: 2.4rem;
+        }
+
+        .-bg {
+          background: url(../../Image/common/img_bg_green.jpg);
+        }
+
+        .-link {
+          font-weight: 500;
+          color: $blue_00b;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .access__map {
+      .map__txt {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 5.9rem;
+
+        @media #{$tab} {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          margin-bottom: 0.2rem;
+        }
+
+        .-tag {
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: $white_fff;
+          background: $black_333;
+          border-radius: 0.3rem;
+          padding: 0.5rem 1rem;
+          margin-right: 1.5rem;
+
+          @media #{$tab} {
+            font-size: 1.2rem;
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+
+      .map__frame {
+        height: 37rem;
+
+        @media #{$tab} {
+          height: 30rem;
+        }
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
