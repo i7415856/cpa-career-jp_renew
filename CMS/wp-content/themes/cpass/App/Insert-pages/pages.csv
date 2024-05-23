@@ -17,3 +17,4 @@ top	2nd	3rd	スラッグ	種類	親ページ	テンプレートファイル	scss
 	転職ノウハウ		knowhows	固定ページ		/Pages/page-knowhows.php	/Assets/Scss/_p50-page-knowhows.scss
 	転職ノウハウ		knowhow	シングルページ		/single-knowhow.php	/Assets/Scss/_p50-single-knowhow.scss
 	求人情報		recruit	固定ページ		/Pages/page-recruit.php	/Assets/Scss/_p50-page-recruit.scss
+	選ばれる理由		reasons	固定ページ		/Pages/page-reasons.php	/Assets/Scss/_p50-page-reasons.scss

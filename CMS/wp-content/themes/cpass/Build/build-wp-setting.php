@@ -283,7 +283,7 @@ function vanilla_pre_post_update($post_id) {
 	session_start();
 	$_SESSION['wp_page_template'] = [$post_id => $_wp_page_template];
 }
-add_action('pre_post_update', 'vanilla_pre_post_update');
+// add_action('pre_post_update', 'vanilla_pre_post_update');
 
 
 /**
@@ -306,7 +306,7 @@ function vanilla_edit_post($post_id) {
 	}
 	session_unset();
 }
-add_action('edit_post', 'vanilla_edit_post');
+// add_action('edit_post', 'vanilla_edit_post');
 
 
 /*--------------------------------------------------

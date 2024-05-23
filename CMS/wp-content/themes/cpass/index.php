@@ -40,7 +40,8 @@ $param = vanilla_sanitize_array($_GET);
 				$args = array(
 					'post_type' => 'post',
 					'paged' => vanilla_paged(),
-					'order' => 'DESC',
+					'orderby' => 'menu_order',
+					'order' => 'ASC',
 					'posts_per_page' => 12,
 				);
 

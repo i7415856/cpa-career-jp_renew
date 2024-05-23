@@ -71,8 +71,9 @@
 <footer id="footer">
 	<div class="footer__inner -pc-only">
 		<div class="footer__cnt">
-			<a href="https://cpa-career.jp/" class="footer__logo">
+			<a href="<?php echo home_url(); ?>" class="footer__logo">
 				<img src="<?php echo get_template_directory_uri() ?>/Image/common/img_logo_f.svg" alt="CPASS CAREER">
+
 			</a>
 			<div class="footer__menu">
 				<ul class="menu__lst">
@@ -152,7 +153,7 @@
 						</a>
 					</li>
 					<li class="lst__item">
-						<a href="https://cpa-career.jp/company">
+						<a href="<?php echo home_url('/company/'); ?>">
 							運営会社情報
 						</a>
 					</li>
@@ -225,7 +226,7 @@
 
 	<div class="footer__inner footer__inner--sp -sp-only">
 		<div class="footer__cnt">
-			<a href="https://cpa-career.jp/" class="footer__logo">
+			<a href="<?php echo home_url(); ?>" class="footer__logo">
 				<img src="<?php echo get_template_directory_uri() ?>/Image/common/img_logo_f.svg" alt="CPASS CAREER">
 			</a>
 			<div class="footer__menu">
@@ -312,7 +313,7 @@
 							</a>
 						</li>
 						<li class="lst__item">
-							<a href="https://cpa-career.jp/company">
+							<a href="<?php echo home_url('/company/'); ?>">
 								運営会社情報
 							</a>
 						</li>

@@ -6,20 +6,6 @@ $domain = (str_replace("www.", "", $_SERVER['HTTP_HOST']));
 $from_email = (is_local())  ? 's.kawakatsu@roseaupensant.jp' : '先方にメールアドレス';
 
 
-
-
-function email_signature() {
-	$email_sigunature = "
-会社名 : 株式会社テスト
-住所 :
-TEL :000-0000-0000
-FAX :000-0000-0000
-UR  :https://sample.com
-";
-
-	return $email_sigunature;
-}
-
 //================================================
 // 関数
 //================================================

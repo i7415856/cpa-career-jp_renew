@@ -61,7 +61,7 @@ function vanilla_meta_ogp() {
 
 		$site_title = get_bloginfo('name');
 		// 画像 （アイキャッチ画像が無い時に使用する代替画像URL）
-		$ogp_image = vanilla_get_yoast_seo_image() ?: vanilla_get_featured_image() ?: get_template_directory_uri() . '/Image/common/ogpimage.jpg';
+		$ogp_image = get_template_directory_uri() . '/Image/common/ogpimage.png';
 
 		// $ogp_image = get_template_directory_uri() . '/Image/SEO/edoctor_OGP.png';
 		// Twitterのアカウント名 (@xxx)
@@ -111,10 +111,14 @@ function vanilla_meta_ogp() {
 		$ogp_description = strip_tags(strip_shortcodes($ogp_description));
 		$ogp_description = mb_substr($ogp_description, 0, 160, 'UTF-8');
 
+		//  favicon
+		$favicon = get_template_directory_uri() . '/Image/common/favicon.png';
+
 
 		// 出力するOGPタグをまとめる
 		$html = "\n";
 		$html .= "<title>{$ogp_title}</title> \n";
+		$html .= "<link rel='shortcut icon' href='{$favicon}'>";
 		$html .= "<meta name='description' content='{$ogp_description}'> \n";
 		$html .= "<meta property='og:locale' content='ja_JP'> \n";
 		$html .= '<meta property="og:title" content="' . esc_attr($ogp_title) . '">' . "\n";

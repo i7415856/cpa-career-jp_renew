@@ -80,8 +80,8 @@ function vanilla_get_prev_next_posts($args) {
 	global $post;
 	$defaults = [
 		'post_type' => 'post',
-		'orderby' => 'post_date',
-		'order' => 'DESC',
+		'orderby' => 'menu_order',
+		'order' => 'ASC',
 		'posts_per_page' => -1,
 	];
 
@@ -206,3 +206,52 @@ function vanilla_update_post_meta_by_wpdb($post_id, $meta_key, $meta_value) {
 		);
 	}
 }
+
+/**
+ * 指定したスラッグを持つ固定ページを下書きに更新します。
+ *
+ * @param string $slug 固定ページのスラッグ。
+ */
+function vanilla_draft_page_by_slug($slug) {
+	// 指定したスラッグの投稿を取得
+	$page = get_page_by_path($slug, OBJECT, 'page');
+
+	if ($page) {
+			// 投稿ステータスを'draft'に更新
+			$page_update = array(
+					'ID'           => $page->ID,
+					'post_status'  => 'draft',
+			);
+
+			wp_update_post($page_update);
+	}
+}
+
+/**
+ * WordPressのinitアクションにフックして、スラッグが'reasons'の固定ページを下書きにします。
+ * 5/31に消す
+ */
+add_action('init', function() {
+	if (!is_local()) {
+		vanilla_draft_page_by_slug('reasons');
+		vanilla_draft_page_by_slug('knowhows');
+		vanilla_draft_page_by_slug('recruit');
+	}
+});
+
+/**
+ * デフォルトのタグ機能を無効にします。
+ */
+function vanilla_remove_default_tags() {
+	// 'post_tag'カスタム分類法を削除
+	unregister_taxonomy('post_tag');
+}
+add_action('init', 'vanilla_remove_default_tags');
+
+/**
+ * 管理画面のサイドバーからタグメニューを削除します。
+ */
+function vanilla_remove_tags_menu() {
+	remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=post_tag');
+}
+add_action('admin_menu', 'vanilla_remove_tags_menu');

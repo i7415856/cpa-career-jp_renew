@@ -15,7 +15,7 @@ if (function_exists('acf_add_local_field_group')) {
 			],
 			[
 				'key' => 'single_faq_related_posts',
-				'label' => 'キャッチコピー（一覧）',
+				'label' => 'その他の関連するご質問',
 				'name' => 'single_faq_related_posts',
 				'type' => 'relationship',
 				'post_type' => ['faq'],

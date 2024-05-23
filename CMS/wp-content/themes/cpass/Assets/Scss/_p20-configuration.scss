@@ -33,6 +33,8 @@ $gray_e2e: #e2e2e2;
 $gray_dbd: #dbdbdb;
 $gray_eae: #eaeff3;
 $gray_f8f: #f8f8f8;
+$gray_f7f: #f7f7f7;
+$gray_f0f: #F0F0F0;
 $gray_d0d: #d0d0d0;
 $lightgreen_b7a: #b7ae3f;
 $lightgreen_efe: #efeaab;
@@ -62,6 +64,15 @@ $one_margin: calc(calc(100vw - #{$inner}) / 2);
 
 @mixin jost {
 	font-family: 'Jost', sans-serif;
+}
+
+@mixin eb {
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+}
+
+@mixin YuMincho {
+	font-family: '明朝体', 'Yu Mincho', 'YuMincho', serif;
 }
 
 @mixin YuGothic {

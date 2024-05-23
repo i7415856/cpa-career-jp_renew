@@ -40,7 +40,4 @@ require_once(get_theme_file_path() . "/App/App-custom-block/column-heading-h3/co
 //挿入系 (本番公開時にはコメントアウトする)
 //========================
 //= 固定ページの挿入 ====
-require_once(get_theme_file_path() . "/App/Insert-pages/App-insert-pages.php");
-
-// //= サンプル投稿挿入 ====
-// require_once(get_theme_file_path() . "/App/Insert-sample-posts/App-insert-sample-posts.php");
+// require_once(get_theme_file_path() . "/App/Insert-pages/App-insert-pages.php");

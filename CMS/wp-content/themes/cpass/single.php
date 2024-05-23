@@ -75,7 +75,8 @@ get_header(); ?>
 	$args = [
 		'post_type' => 'post',
 		'paged' => vanilla_paged(),
-		'order' => 'DESC',
+		'orderby' => 'menu_order',
+		'order' => 'ASC',
 		'posts_per_page' => 3,
 	];
 	$cat = get_the_terms($post, 'category');

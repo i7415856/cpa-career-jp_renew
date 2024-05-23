@@ -1,0 +1,24 @@
+name: Auto Git Pull on XServer
+
+on:
+  push:
+    branches:
+      - main  # Set your branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Execute git pull and deploy_script.sh on XServer
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.XSERVER_HOST }}
+        username: ${{ secrets.XSERVER_USERNAME }}
+        key: ${{ secrets.XSERVER_SSH_KEY }}
+        passphrase: ${{ secrets.XSERVER_SSH_PASSPHRASE }}  # パスフレーズを設定
+        port: ${{ secrets.XSERVER_PORT }}
+        script: |
+          cd /home/${{ secrets.XSERVER_USERNAME }}/dev-roseaupensant.jp/public_html/cpa-cpass-wordpress/wp-content/themes/cpass
+          git checkout -- .
+          git pull origin main

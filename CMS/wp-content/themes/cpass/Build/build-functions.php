@@ -405,8 +405,8 @@ function i($key, $array) {
 */
 function is_honban() {
 	if (
-		$_SERVER['HTTP_HOST'] == 'www.本番のドメイン' ||
-		$_SERVER['HTTP_HOST'] == '本番のドメイン'
+		$_SERVER['HTTP_HOST'] == 'www.cpa-career.jp' ||
+		$_SERVER['HTTP_HOST'] == 'cpa-career.jp'
 	) {
 		return true;
 	} else {
