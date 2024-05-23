@@ -115,14 +115,14 @@
 							コラム
 						</a>
 
-						<ul class="sub_menu">
+						<!-- <ul class="sub_menu">
 							<li class="sub__item">
 								<a href="<?php echo home_url("/column/"); ?>">コラム一覧</a>
 							</li>
 							<li class="sub__item">
 								<a href="<?php echo home_url("/knowhow/"); ?>">転職ノウハウ</a>
 							</li>
-						</ul>
+						</ul> -->
 					</li>
 					<li class="lst__item">
 						<a href="<?php echo home_url("/case/"); ?>">
