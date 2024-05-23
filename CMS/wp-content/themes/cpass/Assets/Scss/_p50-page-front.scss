@@ -1,0 +1,2158 @@
+.pageTop {
+	.pageTop__kv {
+		height: 81.1rem;
+		background: url(../../Image/Front/img_kv.png) no-repeat center center /
+		cover;
+
+		@media #{$tab} {
+			height: 65.9rem;
+			background: url(../../Image/Front/img_kv-sp.png) no-repeat center center /
+			cover;
+		}
+
+		.kv__inr {
+			position: relative;
+			gap: 2rem;
+			justify-content: space-between;
+			display: flex;
+			height: 100%;
+			max-width: calc(135.4rem + 4rem);
+			padding: 0 2rem;
+			margin: 0 auto;
+
+			@media (max-width: 1000px) and (min-width: 769px) {
+				align-items: center;
+			}
+
+			@media #{$tab} {
+				align-items: center;
+				flex-direction: column;
+				gap: 0;
+				justify-content: center;
+				padding: 0;
+			}
+
+			.kv__ttl {
+				margin-top: 20.2rem;
+
+				@media (max-width: 1000px) and (min-width: 769px) {
+					margin-top: 0;
+				}
+
+				@media #{$tab} {
+					max-width: 33rem;
+					margin: 0 0 4rem;
+				}
+			}
+
+			.kv__banner {
+				position: relative;
+				padding: 0 1rem;
+				margin-right: 2.7rem;
+				background: linear-gradient(
+				180deg,
+				rgba(31, 31, 31, 1) 50%,
+				rgba(116, 116, 116, 1) 100%
+				);
+
+				@media (max-width: 1000px) and (min-width: 769px) {
+					margin-right: 0;
+				}
+
+				@media #{$pc-max} {
+					width: 100%;
+					height: 100%;
+					max-width: 55.7rem;
+				}
+
+				@media #{$tab} {
+					width: 100vw;
+					padding: 0 2rem;
+					margin: 0 -2rem;
+				}
+
+				&::after {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					content: '';
+					background: url(../../Image/common/img_bg_square.png);
+					background-size: 4.7rem 4.7rem;
+					opacity: 0.1;
+
+					@media #{$tab} {
+						display: none;
+					}
+				}
+
+				.banner__inr {
+					position: relative;
+					flex-direction: column;
+					z-index: 2;
+					display: flex;
+					height: 100%;
+					padding-top: 14rem;
+					text-align: center;
+
+					@media #{$tab} {
+						padding: 2.6rem 0 2rem;
+					}
+
+					.banner__ttl {
+						margin-bottom: 1.8rem;
+						color: $white_fff;
+						font-size: 2.9rem;
+						font-weight: 700;
+						line-height: 1.2;
+						letter-spacing: 0.05rem;
+
+						@media (max-width: 1000px) and (min-width: 769px) {
+							font-size: 2.4rem;
+						}
+
+						@media #{$tab} {
+							margin-bottom: 1.3rem;
+							font-size: 1.8rem;
+							line-height: 1.3;
+						}
+
+						.-sm {
+							font-size: 2.5rem;
+							line-height: 1.5;
+
+							@media (max-width: 1000px) and (min-width: 769px) {
+								font-size: 2rem;
+							}
+
+							@media #{$tab} {
+								font-size: 1.6rem;
+							}
+						}
+
+						.-yel {
+							display: inline-block;
+							margin-bottom: 0.2rem;
+						}
+					}
+
+					.banner__tags {
+						flex-wrap: wrap;
+						gap: 1.8rem 1.1rem;
+						justify-content: center;
+						display: flex;
+						width: 100%;
+						max-width: 47.5rem;
+						margin: 0 auto 4.5rem;
+
+						@media #{$tab} {
+							gap: 1.3rem 0.8rem;
+							margin: 0 auto 2rem;
+						}
+
+						li {
+							align-items: center;
+							justify-content: center;
+							display: flex;
+							padding: 0.2rem 1.7rem 0;
+							font-size: 2.3rem;
+							font-weight: 700;
+							background: $white_fff;
+							border-radius: 0.4rem;
+
+							@media (max-width: 1000px) and (min-width: 769px) {
+								padding: 0.2rem 1rem 0;
+								font-size: 1.6em;
+							}
+
+							@media #{$tab} {
+								padding: 0.3rem 1.5rem 0.2rem;
+								font-size: 1.4rem;
+							}
+						}
+					}
+
+					.banner__frame {
+						position: relative;
+						width: 100%;
+						max-width: 47.5rem;
+						padding: 1.2rem 0;
+						margin: 0 auto;
+						color: $white_fff;
+
+						&::before ,
+						&::after {
+							position: absolute;
+							left: 0;
+							width: 100%;
+							height: 1.2rem;
+							content: '';
+
+							@media #{$tab} {
+								height: 0.8rem;
+							}
+						}
+
+						&::before {
+							top: 0;
+							background: url(../../Image/Front/ico_line_up.svg) repeat-x top
+							left / auto 100%;
+						}
+
+						&::after {
+							bottom: 0;
+							background: url(../../Image/Front/ico_line_down.svg) repeat-x
+							bottom left / auto 100%;
+						}
+
+						.frame__num {
+							font-size: 2.5rem;
+							font-weight: 700;
+							line-height: 1.9;
+							letter-spacing: 0.05rem;
+
+							@media (max-width: 1000px) and (min-width: 769px) {
+								font-size: 2rem;
+							}
+
+							@media #{$tab} {
+								font-size: 1.6rem;
+							}
+
+							.-num {
+								@include jost;
+								font-size: 3.1rem;
+
+								@media (max-width: 1000px) and (min-width: 769px) {
+									font-size: 2.8rem;
+								}
+
+								@media #{$tab} {
+									font-size: 2rem;
+								}
+
+								.-lg {
+									font-size: 4.1rem;
+
+									@media (max-width: 1000px) and (min-width: 769px) {
+										font-size: 3.8rem;
+									}
+
+									@media #{$tab} {
+										font-size: 2.7rem;
+									}
+								}
+							}
+						}
+
+						.frame__txt {
+							font-size: 4.4rem;
+							font-weight: 700;
+							line-height: 1.6;
+							letter-spacing: 0.05rem;
+
+							@media (max-width: 1000px) and (min-width: 769px) {
+								font-size: 3.5rem;
+							}
+
+							@media #{$tab} {
+								font-size: 2.8rem;
+							}
+						}
+					}
+				}
+			}
+
+			.kv__popup {
+				display: none;
+
+				@media #{$tab} {
+					position: fixed;
+					right: 2.1rem;
+					bottom: 10rem;
+					z-index: 100;
+					display: block;
+					width: fit-content;
+					background-color: #ffffff;
+					border-radius: 0.3rem;
+				}
+
+				&.-close {
+					display: none;
+				}
+
+				.xBtn {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 2.4rem;
+					height: 2.4rem;
+					background: url(../../Image/common/ico__btnPopup.svg) no-repeat center;
+					background-size: 100% 100%;
+					transform: translate(45%, -45%);
+					filter: drop-shadow(0 3px 6px #00000023);
+				}
+
+				.sec__btn {
+					width: 20rem;
+					height: 54px;
+					min-height: 5.4rem;
+					padding: 0.9rem 0.8rem 0.9rem 6.1rem;
+					font-size: 1.2rem;
+					text-align: justify;
+					text-justify: inter-ideograph;
+					box-shadow: none;
+					border: none;
+					border-radius: 0.3rem;
+					filter: drop-shadow(0 3px 6px #00000023);
+
+					@media #{$tab} {
+						align-items: center;
+						flex-direction: row;
+						justify-content: center;
+						order: 1;
+						width: fit-content;
+						height: auto;
+						max-width: 100%;
+						padding: 1rem 1.6rem;
+						border: none;
+					}
+
+					&::before {
+						display: none;
+					}
+
+					&::after {
+						display: none;
+					}
+
+					.sec__btnText {
+						font-size: 1.2rem;
+
+						@media #{$header} {
+							align-items: center;
+							flex-direction: column;
+							display: flex;
+							font-size: 1.2rem;
+							line-height: 1.8;
+						}
+					}
+
+					.-yel {
+						margin-top: -0.2rem;
+						font-size: 1.8rem;
+					}
+
+					.-yel-underline {
+						text-decoration: underline;
+
+						text-decoration-color: #b7ae3f;
+						text-decoration-thickness: 0.2rem;
+						text-underline-offset: 3px;
+					}
+
+					&--portal {
+						color: $black_000;
+						background: $white_fff;
+						border: 2px solid $primary;
+
+						.sec__btnText {
+							position: relative;
+
+							@media #{$header} {
+								display: block;
+								line-height: 1.6875;
+								// padding-right: 4rem;
+							}
+
+							&::after {
+								position: absolute;
+								right: 1.3rem;
+								bottom: 0.4rem;
+								width: 1.4rem;
+								height: 1.4rem;
+								content: '';
+								background: url(../../Image/common/ico__ext-link.svg) no-repeat
+								center center / 100% auto;
+							}
+						}
+					}
+				}
+			}
+
+			.kv__btn {
+				position: absolute;
+				right: 14.4rem;
+				bottom: 3.2rem;
+				align-items: center;
+				flex-direction: column;
+				gap: 1rem;
+				z-index: 3;
+				display: flex;
+				width: 34.4rem;
+
+				@media (max-width: 1520px) and (min-width: 1001px) {
+					right: 14rem;
+				}
+
+				@media (max-width: 1000px) and (min-width: 769px) {
+					right: auto;
+					left: 53%;
+				}
+
+				@media #{$tab} {
+					position: fixed;
+					bottom: 0;
+					left: 0;
+					flex-direction: row;
+					gap: 2.1vw;
+					z-index: 100;
+					width: 100%;
+					padding: 0.7rem 5.3vw 1.3rem 5.3vw;
+					background-color: #ffffff;
+				}
+
+				.sec__btn {
+					height: 11.6rem;
+					max-width: 100%;
+					padding: 0 3.1rem;
+
+					@media #{$tab} {
+						align-items: center;
+						// max-width: 22.2rem;
+						flex-direction: row;
+						justify-content: center;
+						width: 64vw;
+						height: 6.8rem;
+						padding: 0 3.2vw 0 2.1vw;
+						border: none;
+						border-radius: 0.4rem;
+
+						.sec__btnText {
+							align-items: center;
+							flex-direction: column;
+							display: flex;
+							font-size: 1.4rem;
+							line-height: 1.8;
+
+							.-yel {
+								font-size: 2rem;
+							}
+						}
+					}
+
+					@media #{$msp} {
+						.sec__btnText {
+							align-items: center;
+							flex-direction: column;
+							display: flex;
+							font-size: 1.2rem;
+							line-height: 1.8;
+
+							.-yel {
+								font-size: 1.8rem;
+							}
+						}
+					}
+
+					&::before {
+						left: -4rem;
+						width: 7.7rem;
+						height: 7.7rem;
+
+						@media #{$tab} {
+							position: static;
+							left: 2rem;
+							width: 5rem;
+							height: 5rem;
+							margin-right: 0.4rem;
+							transform: translate(0, 0);
+						}
+					}
+
+					&::after {
+						right: 1.2rem;
+						width: 1.9rem;
+						height: 1.5rem;
+
+						@media #{$tab} {
+							position: static;
+							margin-left: 1.6vw;
+							transform: translate(0, 0);
+							// display: none;
+						}
+					}
+
+					.-yel {
+						@media #{$tab} {
+							font-size: 2.4rem;
+						}
+					}
+				}
+			}
+
+			.kv__btnCaption {
+				color: #ffffff;
+				font-size: 1.8rem;
+				font-weight: 600;
+				text-align: center;
+
+				@media #{$tab} {
+					color: #000000;
+				}
+			}
+
+			.kv__buttonPerson {
+				display: none;
+
+				@media #{$tab} {
+					position: relative;
+					align-items: center;
+					flex-direction: column;
+					display: flex;
+					height: 6.8rem;
+					padding: 0.8rem 0.3rem;
+					overflow: hidden;
+					font-size: 1rem;
+					font-weight: 600;
+					line-height: 1.5;
+					text-align: center;
+					background: #e9f4f5;
+					border-radius: 0.4rem;
+				}
+
+				@media #{$msp} {
+					font-size: 0.8rem;
+				}
+
+				span {
+					font-weight: 600;
+					text-decoration: underline;
+				}
+
+				&::before {
+					display: inline-block;
+					width: 1.7rem;
+					height: 1.9rem;
+					margin-bottom: 0.6rem;
+					content: '';
+					background-image: url(../../Image/common/icon_user_blue_1.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: contain;
+				}
+
+				&::after {
+					position: absolute;
+					right: 0;
+					bottom: 6px;
+					display: inline-block;
+					width: 3rem;
+					height: 1rem;
+					content: '';
+					background-color: $primary;
+					transform: rotate(-45deg);
+					transform-origin: right top;
+				}
+
+				@media #{$tab} {
+					order: 2;
+					width: 23vw;
+				}
+
+				///____________________________
+				// モディファイア
+				//____________________________
+				&.-yellow {
+					background-color: #efede1;
+
+					&::before {
+						background-image: url(../../Image/common/icon_user_yellow_1.svg);
+					}
+
+					&::after {
+						background-color: #b7ae3f;
+					}
+
+					.menu__buttonPersonText {
+						color: #b7ae3f;
+					}
+				}
+			}
+
+			.menu__buttonPersonText {
+				color: $primary;
+			}
+		}
+	}
+
+	.pageTop__company {
+		padding: 6.9rem 0 8.4rem;
+
+		@media #{$tab} {
+			padding: 5.2rem 0 6rem;
+		}
+
+		.inner {
+			.sec__ttl {
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				margin-bottom: 3.2rem;
+				font-size: 3.4rem;
+
+				@media #{$tab} {
+					margin-bottom: 0.8rem;
+					font-size: 2.4rem;
+				}
+
+				* {
+					letter-spacing: 0.05em;
+				}
+
+				.-yel ,
+				.-blu {
+					position: relative;
+					font-size: 4rem;
+
+					@media #{$tab} {
+						font-size: 2.8rem;
+					}
+				}
+
+				.-yel {
+					letter-spacing: 0.1em;
+
+					&::after {
+						position: absolute;
+						top: -0.7rem;
+						left: 1.5rem;
+						width: 0.7rem;
+						height: 0.7rem;
+						content: '';
+						background: $lightgreen_b7a;
+						border-radius: 100%;
+
+						@media #{$tab} {
+							top: -0.9rem;
+							left: 1.1rem;
+						}
+					}
+				}
+			}
+		}
+
+		.company__slide {
+			.swiper-wrapper {
+				.slide__item {
+					align-items: center;
+					justify-content: center;
+					display: flex;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.pageTop__information {
+		padding: 6.9rem 0 10.3rem;
+		background: url(../../Image/common/img_bg_square.png);
+		background-size: 4.7rem 4.7rem;
+
+		@media #{$tab} {
+			padding: 7.5rem 0 6rem;
+		}
+
+		.inner {
+			.sec__ttl {
+				@media #{$tab} {
+					margin-bottom: 0.9rem;
+				}
+			}
+
+			.information__cateLst {
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 1.2rem 0.5rem;
+				justify-content: center;
+				display: flex;
+				width: 100%;
+				max-width: 70rem;
+				margin: 0 auto;
+				margin-bottom: 6rem;
+
+				@media #{$tab} {
+					gap: 1rem 0.7rem;
+					margin-bottom: 4rem;
+				}
+
+				li {
+					padding: 0.3rem 1.1rem 0.1rem;
+					color: $white_fff;
+					font-size: 1.6rem;
+					font-weight: 700;
+					line-height: 1.6;
+					text-align: center;
+					background: $primary;
+					border-radius: 0.4rem;
+
+					@media #{$tab} {
+						padding: 0.1rem 1.1rem;
+						font-size: 1.4rem;
+					}
+				}
+			}
+
+			.information__banners {
+				flex-wrap: wrap;
+				gap: 3rem;
+				justify-content: center;
+				display: flex;
+				margin-bottom: 5.6rem;
+
+				@media #{$tab} {
+					gap: 2rem;
+				}
+
+				.banner__item {
+					width: 100%;
+					max-width: 38rem;
+					background: $white_fff;
+					border: 0.1rem solid $gray_707;
+					border-radius: 0.3rem;
+
+					.banner__head {
+						align-items: center;
+						justify-content: center;
+						display: flex;
+						height: 9.6rem;
+						padding: 0 0.5rem;
+						background: linear-gradient(180deg, $black_1f1 50%, $gray_747 100%);
+
+						@media #{$tab} {
+							height: 7.2rem;
+						}
+
+						.head__ttl {
+							color: $white_fff;
+							font-size: 2.4em;
+							font-weight: 700;
+							line-height: 1.3;
+							letter-spacing: 0.05rem;
+							text-align: center;
+
+							@media #{$tab} {
+								font-size: 1.8rem;
+							}
+						}
+					}
+
+					.banner__cnt {
+						padding: 1.9rem 1.6rem 2rem;
+
+						@media #{$tab} {
+							padding: 1.5rem 1.8rem;
+						}
+
+						.cnt__block {
+							&:nth-child(1) {
+								flex-direction: column;
+								display: flex;
+								padding-bottom: 0.4rem;
+								border-bottom: 0.2rem solid $gray_e2e;
+							}
+
+							&:nth-child(2) {
+								align-items: center;
+								gap: 1.2rem;
+								display: flex;
+								padding-top: 1.5rem;
+
+								@media #{$tab} {
+									gap: 2rem;
+									padding-top: 1rem;
+								}
+							}
+
+							.block__sub {
+								align-items: center;
+								display: flex;
+								margin-bottom: 0.2rem;
+								font-size: 1.8rem;
+								font-weight: 700;
+								letter-spacing: 0.05rem;
+
+								@media #{$tab} {
+									margin-bottom: 0.6rem;
+									font-size: 1.4rem;
+								}
+
+								.-cate {
+									padding: 0.1rem 0.6rem;
+									margin-right: 1.5rem;
+									color: $white_fff;
+									font-size: 1.6rem;
+									background: $primary;
+
+									@media #{$tab} {
+										padding: 0.4rem 1rem 0.1rem;
+										font-size: 1.2rem;
+									}
+								}
+							}
+
+							.block__txt {
+								margin-top: auto;
+								font-size: 2.8rem;
+								font-weight: 700;
+								line-height: 1.6;
+								letter-spacing: 0.05rem;
+
+								@media #{$tab} {
+									font-size: 1.8rem;
+								}
+							}
+
+							.block__tag {
+								padding: 1.3rem 0.8rem;
+								color: $white_fff;
+								font-size: 2.4rem;
+								font-weight: 700;
+								line-height: 1.2;
+								letter-spacing: 0.05rem;
+								background: $black_333;
+								border-radius: 0.3rem;
+
+								writing-mode: vertical-rl;
+
+								@media #{$tab} {
+									padding: 1rem 0.6rem;
+									font-size: 1.6rem;
+								}
+							}
+
+							.block__price {
+								font-size: 1.8rem;
+								font-weight: 700;
+								letter-spacing: 0.05rem;
+
+								@media #{$tab} {
+									font-size: 1.4rem;
+								}
+
+								.-md {
+									@include jost;
+									color: $red_d60;
+									font-size: 3rem;
+
+									@media #{$tab} {
+										font-size: 2.4rem;
+									}
+								}
+
+								.-lg {
+									@include jost;
+									color: $red_d60;
+									font-size: 3.6rem;
+
+									@media #{$tab} {
+										font-size: 2.8rem;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.information__txt {
+				margin-bottom: 1.7rem;
+				color: $black_333;
+				font-size: 2.8rem;
+				font-weight: 700;
+				line-height: 1.4;
+				letter-spacing: 0.05rem;
+				text-align: center;
+
+				@media #{$tab} {
+					margin-bottom: 2.1rem;
+					font-feature-settings: 'palt';
+					font-size: 1.6rem;
+				}
+
+				.-blu {
+					font-size: 3.6rem;
+
+					@media #{$tab} {
+						font-size: 2.4rem;
+					}
+				}
+			}
+		}
+	}
+
+	.pageTop__career {
+		padding: 10.2rem 0 11.7rem;
+		background: url(../../Image/Front/img_bg01.jpg) repeat-y center top / 100%
+		auto;
+
+		@media #{$tab} {
+			padding: 7.6rem 0 7rem;
+			background: url(../../Image/Front/img_bg01-sp.jpg) repeat-y center top /
+			100% auto;
+		}
+
+		.inner {
+			.sec__txt {
+				margin-bottom: 4.7rem;
+
+				@media #{$tab} {
+					margin-bottom: 2rem;
+				}
+			}
+
+			.career__txt {
+				width: 100%;
+				max-width: 80rem;
+				margin: 0 auto 4.7rem;
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 2;
+			}
+
+			.career__lst {
+				flex-wrap: wrap;
+				justify-content: center;
+				display: flex;
+				padding: 0;
+				margin-bottom: 5rem;
+
+				@media (max-width: 1000px) {
+					margin-bottom: 4rem;
+				}
+
+				.pageFrontCareerItem {
+					width: 32%;
+
+					@media (max-width: 1000px) {
+						width: 100%;
+					}
+
+					&:not(:nth-child(2n)) {
+						margin-right: 0;
+					}
+
+					&:not(:nth-child(3n)) {
+						margin-right: 2%;
+
+						@media (max-width: 1000px) {
+							margin-right: 0;
+						}
+					}
+
+					.item__inr {
+						height: 100%;
+					}
+				}
+
+				.item__head {
+					@media (max-width: 1000px) {
+						min-height: 6.7rem;
+					}
+				}
+
+				.infor__left {
+					align-items: center;
+					display: flex;
+					padding: 0;
+					margin: 0;
+					margin-bottom: 3.6rem;
+					font-size: 1.8rem;
+
+					&::after {
+						top: calc(100% + 1.2rem);
+						left: 50%;
+						display: inline-block;
+						width: 5.4rem;
+						height: 1.3rem;
+						content: '';
+						background: url(../../Image/common/icon_3_grey_triangles_1.svg)
+						no-repeat center center / 100% auto;
+						transform: translate(-50%, 0);
+					}
+
+					& > span {
+						display: inline-block;
+						padding: 0 0.6rem;
+						margin-left: 1.2rem;
+					}
+				}
+
+				.item__infor {
+					align-items: center;
+					flex-direction: column;
+					display: flex;
+					margin: 0;
+					line-height: 1;
+				}
+
+				.infor__right {
+					font-size: 2.4rem;
+
+					@media #{$tab} {
+					}
+
+					& > span {
+						padding: 0 0.6rem;
+						line-height: 1.1;
+					}
+				}
+
+				.item__txt {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.pageTop__account {
+		padding: 8.7rem 0 12.8rem;
+		background: url(../../Image/Front/img_bg02.jpg) no-repeat center center /
+		cover;
+
+		@media #{$tab} {
+			padding: 5.1rem 0 7rem;
+			background: url(../../Image/Front/img_bg02-sp.jpg) repeat-y center top /
+			100% auto;
+		}
+
+		.inner {
+			.sec__ttl {
+				margin-top: -0.6rem;
+				margin-bottom: 2.1rem;
+
+				@media #{$tab} {
+					margin-bottom: 0.9rem;
+				}
+			}
+
+			.account__txt {
+				text-align: center;
+
+				&.-txt01 {
+					margin-bottom: 5.1rem;
+					font-size: 2.4rem;
+					font-weight: 500;
+					line-height: 1.7;
+
+					@media #{$tab} {
+						margin-bottom: 3.3rem;
+						font-size: 1.6rem;
+						text-align: left;
+					}
+
+					.-w__yel {
+						color: $black_000;
+						font-weight: 700;
+
+						@media #{$tab} {
+							padding: 0;
+							background: none;
+						}
+					}
+				}
+
+				&.-txt02 {
+					margin-bottom: 1.8rem;
+					color: $black_333;
+					font-size: 2.8rem;
+					font-weight: 700;
+					line-height: 1.4;
+					letter-spacing: 0.05rem;
+
+					@media #{$tab} {
+						font-feature-settings: 'palt';
+						font-size: 1.6rem;
+					}
+
+					.-blu {
+						font-size: 3.6rem;
+
+						@media #{$tab} {
+							font-size: 2.4rem;
+						}
+					}
+				}
+			}
+
+			.account__lst {
+				flex-wrap: wrap;
+				gap: 1.7rem;
+				justify-content: center;
+				display: flex;
+				margin-bottom: 4.9rem;
+
+				@media (max-width: 1280px) and (min-width: 769px) {
+					gap: 7rem;
+					width: 64.4rem;
+					margin: 0 auto 4.9rem;
+				}
+
+				@media #{$tab} {
+					gap: 2rem 0.9rem;
+					max-width: 33.5rem;
+					margin: 0 auto 3rem;
+				}
+
+				.account__item {
+					@include transit;
+					position: relative;
+					width: 100%;
+					height: fit-content;
+					max-width: 28.7rem;
+					overflow: hidden;
+					box-shadow: 0 0 1rem rgba($black_000, 16%);
+					border-radius: 0.3rem;
+					pointer-events: none;
+
+					// あとで消す
+
+					@media #{$tab} {
+						max-width: calc((100% - 0.9rem) / 2);
+					}
+
+					&:nth-child(2n) {
+						margin-top: 4.9rem;
+
+						@media #{$tab} {
+							margin-top: 2.8rem;
+						}
+					}
+
+					.item__ttl {
+						position: absolute;
+						bottom: 8.7rem;
+						left: 0;
+						color: $white_fff;
+						font-size: 2.4rem;
+						font-weight: 700;
+						line-height: 1.5;
+						letter-spacing: 0.05rem;
+
+						@media #{$tab} {
+							bottom: 5rem;
+							font-feature-settings: 'palt';
+							font-size: 1.6rem;
+							line-height: 1.4;
+						}
+
+						span {
+							padding: 0 0.5rem;
+							background: url(../../Image/common/img_bg_blue.jpg);
+
+							@media #{$tab} {
+								padding: 0 0.2rem;
+							}
+						}
+					}
+
+					.item__name {
+						position: absolute;
+						right: 0;
+						bottom: 1.3rem;
+						padding-right: 4.3rem;
+						color: $white_fff;
+						font-size: 2.8rem;
+						font-weight: 700;
+						line-height: 1.2;
+						letter-spacing: 0.05rem;
+
+						@media #{$tab} {
+							bottom: 0.8rem;
+							padding-right: 2.1rem;
+							font-size: 1.8rem;
+						}
+
+						&::after {
+							position: absolute;
+							top: 50%;
+							right: 1.3rem;
+							display: none;
+							width: 1.5rem;
+							height: 1.2rem;
+							content: '';
+							background: url(../../Image/common/ico_arrow-white.svg) no-repeat
+							center center / 100% auto;
+							transform: translateY(-50%);
+
+							// あとで消す
+
+							@media #{$tab} {
+								right: 0.8rem;
+								width: 0.9rem;
+								height: 0.7rem;
+							}
+						}
+					}
+
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+
+			.sec__detail {
+				margin-bottom: 5.6rem;
+
+				@media #{$tab} {
+					margin-bottom: 3.8rem;
+				}
+			}
+		}
+	}
+
+	.pageTop__cpass {
+		padding: 9.1rem 0 13.5rem;
+		background: $gray_454;
+
+		@media #{$tab} {
+			padding: 7.8rem 0 7rem;
+		}
+
+		.inner {
+			.sec__ttl {
+				color: $white_fff;
+
+				@media #{$tab} {
+					margin-bottom: 2.1rem;
+					line-height: 1.2;
+				}
+			}
+
+			.sec__txt {
+				margin-top: -0.8rem;
+				margin-bottom: 9.7rem;
+				color: $white_fff;
+
+				.-w__yel {
+					margin-right: 1.5rem;
+
+					@media #{tab} {
+						margin-right: 0;
+					}
+				}
+			}
+
+			.cpass__reason {
+				gap: 6rem;
+				justify-content: center;
+				display: flex;
+				margin-bottom: 10.4rem;
+
+				@media (max-width: 1000px) and (min-width: 769px) {
+					gap: 1rem;
+				}
+
+				@media #{$tab} {
+					flex-wrap: wrap;
+					margin-bottom: 8.3rem;
+				}
+
+				.reason__block {
+					position: relative;
+					width: calc((100% - 12rem) / 3);
+					height: fit-content;
+					padding: 4.4rem 3.5rem 3.9rem;
+					background: $white_fff;
+					border-radius: 0.3rem;
+
+					@media (max-width: 1000px) and (min-width: 769px) {
+						width: calc((100% - 2rem) / 3);
+						padding: 4.4rem 1rem 3.9rem;
+					}
+
+					@media #{$tab} {
+						width: 100%;
+						padding: 4.4rem 2rem 5.3rem;
+					}
+
+					&:nth-child(2) {
+						@media #{$pc-max} {
+							margin-top: 5rem;
+						}
+					}
+
+					&:nth-child(3) {
+						@media #{$pc-max} {
+							margin-top: 10rem;
+						}
+					}
+
+					.block__num {
+						@include jost;
+						position: absolute;
+						top: -4.4rem;
+						left: 50%;
+						align-items: center;
+						flex-direction: column;
+						justify-content: center;
+						display: flex;
+						width: 8rem;
+						height: 8rem;
+						color: $lightgreen_b7a;
+						font-size: 1.8rem;
+						font-style: italic;
+						font-weight: 700;
+						line-height: 1;
+						text-align: center;
+						background: $white_fff;
+						border: 0.2rem solid $lightgreen_b7a;
+						border-radius: 100%;
+						transform: translateX(-50%);
+
+						@media #{$tab} {
+							top: -4.1rem;
+							width: 7.5rem;
+							height: 7.5rem;
+							font-size: 1.6rem;
+						}
+
+						.-num {
+							padding-right: 0.5rem;
+							font-size: 4rem;
+
+							@media #{$tab} {
+								font-size: 3.6rem;
+							}
+						}
+					}
+
+					.block__ttl {
+						margin-bottom: 0.8rem;
+						font-feature-settings: 'palt';
+						font-size: 2.4rem;
+						font-weight: 700;
+						line-height: 1.5;
+						letter-spacing: 0.05rem;
+						text-align: center;
+
+						@media (max-width: 1000px) and (min-width: 769px) {
+							font-size: 2rem;
+						}
+
+						@media #{$tab} {
+							margin-bottom: 1.3rem;
+							font-size: 1.8rem;
+						}
+					}
+
+					.block__txt {
+						font-size: 1.6rem;
+						font-weight: 400;
+						line-height: 2;
+
+						@media #{$tab} {
+							font-size: 1.4rem;
+							line-height: 1.8;
+						}
+					}
+				}
+			}
+
+			.cpass__banner {
+				flex-wrap: wrap;
+				gap: 4.9rem;
+				justify-content: center;
+				display: flex;
+				max-width: 109.2rem;
+				margin: 0 auto;
+
+				@media #{$pc-max} {
+					align-items: flex-start;
+				}
+
+				@media #{$tab} {
+					gap: 3.3rem;
+				}
+
+				.banner__head {
+					position: relative;
+					align-items: flex-end;
+					display: flex;
+					width: 100%;
+					max-width: 36.8rem;
+
+					@media #{$tab} {
+						max-width: 33.4rem;
+					}
+
+					.banner__stamp {
+						position: absolute;
+						bottom: 12rem;
+						left: 0;
+						align-items: center;
+						flex-direction: column;
+						justify-content: center;
+						display: flex;
+						width: 19.4rem;
+						height: 19.4rem;
+						font-size: 1.6rem;
+						font-weight: 700;
+						line-height: 1.3;
+						text-align: center;
+						background: $white_fff;
+						border: 0.4rem solid $primary;
+						border-radius: 100%;
+
+						@media #{$tab} {
+							width: 17.6rem;
+							height: 17.6rem;
+							font-size: 1.4rem;
+							line-height: 1.5;
+						}
+
+						.-lg {
+							font-size: 3rem;
+
+							@media #{$tab} {
+								font-size: 2.6rem;
+							}
+						}
+					}
+
+					.banner__img {
+						width: 18.8rem;
+
+						@media #{$tab} {
+							width: 17.1rem;
+						}
+					}
+
+					.banner__note {
+						width: calc(100% - 18.8rem);
+						padding-left: 3rem;
+						color: $white_fff;
+						font-size: 1rem;
+						font-weight: 700;
+
+						@media #{$tab} {
+							width: calc(100% - 17.1rem);
+							font-size: 0.8rem;
+							line-height: 1.6;
+						}
+					}
+				}
+
+				.banner__cnt {
+					width: calc(100% - 41.7rem);
+					padding: 4.6rem 0;
+					border-color: $white_fff;
+					border-style: solid;
+					border-width: 0.2rem 0 0.2rem;
+
+					@media (max-width: 900px) {
+						width: 100%;
+						padding: 1.7rem 0;
+					}
+
+					.banner__txt {
+						color: $white_fff;
+						font-size: 2.4rem;
+						font-weight: 700;
+						line-height: 1.8;
+
+						@media #{$tab} {
+							font-size: 1.4rem;
+						}
+
+						.-w__yel {
+							font-size: 2.8rem;
+
+							@media #{$tab} {
+								font-size: 1.8rem;
+							}
+
+							&.-sm {
+								font-size: 2.4rem;
+
+								@media #{$tab} {
+									font-size: 1.6rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pageTop__usage {
+		position: relative;
+		padding-bottom: 2.2rem;
+		background: url(../../Image/common/img_bg_square.png);
+		background-position: bottom left;
+		background-size: 4.7rem 4.7rem;
+
+		@media #{$tab} {
+			padding-bottom: 0;
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			bottom: 50rem;
+			left: 0;
+			width: 100%;
+			content: '';
+			background: $lightblue_e9f;
+		}
+
+		.usage__bg {
+			position: relative;
+			z-index: 3;
+			padding: 9.7rem 0 0;
+			background: url(../../Image/Front/img_bg03.png) no-repeat center bottom
+			3.8rem / 100% auto;
+
+			@media #{$tab} {
+				padding: 8.5rem 0 5.7rem;
+				background: url(../../Image/Front/img_bg03-sp.png) no-repeat center
+				bottom / 100% auto;
+			}
+
+			.inner {
+				.sec__ttl {
+					@media #{$tab} {
+						margin-bottom: 1.7rem;
+					}
+				}
+
+				.sec__txt {
+					margin-top: -0.3rem;
+					margin-bottom: 5.2rem;
+
+					@media #{$tab} {
+						margin-bottom: 4rem;
+					}
+				}
+
+				.usage__step {
+					width: 100%;
+					max-width: 100rem;
+					margin: 0 auto 6.5rem;
+
+					@media #{$tab} {
+						margin: 0 auto 3.9rem;
+					}
+
+					.step__block {
+						padding: 3rem 3rem 3.1rem 4rem;
+						margin-bottom: 3rem;
+						background: $white_fff;
+
+						@media #{$tab} {
+							padding: 2rem 1.5rem;
+							margin-bottom: 2rem;
+						}
+
+						.block__head {
+							position: relative;
+							align-items: center;
+							gap: 2rem;
+							display: flex;
+							padding-right: 3.6rem;
+
+							@media #{$tab} {
+								gap: 1.7rem;
+								padding-right: 1.6rem;
+							}
+
+							.head__tag {
+								@include jost;
+								align-items: center;
+								justify-content: center;
+								display: flex;
+								width: 9.7rem;
+								height: 3.6rem;
+								color: $white_fff;
+								font-size: 1.6rem;
+								font-weight: 500;
+								letter-spacing: 0.05rem;
+								text-align: center;
+								background: $primary;
+
+								@media #{$tab} {
+									width: 7rem;
+									height: 2.7rem;
+									font-size: 1.4rem;
+								}
+							}
+
+							.head__ttl {
+								width: calc(100% - 11.7rem);
+								font-size: 1.8rem;
+								font-weight: 700;
+								line-height: 1.7;
+								letter-spacing: 0.05rem;
+								cursor: pointer;
+
+								@media #{$tab} {
+									width: calc(100% - 8.7rem);
+									font-size: 1.6rem;
+								}
+							}
+						}
+
+						.block__cnt {
+							display: none;
+							padding-top: 2.2rem;
+							padding-left: 11.7rem;
+							margin-top: 2rem;
+							border-top: 0.1rem solid $gray_aaa;
+
+							@media #{$tab} {
+								padding-top: 1.3rem;
+								padding-left: 0;
+								margin-top: 1.5rem;
+							}
+
+							.step__txt {
+								font-size: 1.8rem;
+								font-weight: 500;
+								line-height: 1.4;
+
+								@media #{$tab} {
+									font-size: 1.6rem;
+									line-height: 1.6;
+								}
+
+								a {
+									color: $pink_ff0;
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pageTop__carrier {
+		padding: 7.9rem 0 13rem;
+		background: url(../../Image/common/img_bg_square.png);
+		background-size: 4.7rem 4.7rem;
+
+		@media #{$tab} {
+			padding: 3.7rem 0 7rem;
+		}
+
+		.inner {
+			.sec__ttl {
+				margin-bottom: 4.5rem;
+			}
+
+			.carrier__banners {
+				flex-wrap: wrap;
+				gap: 10rem;
+				justify-content: center;
+				display: flex;
+				padding: 0 1rem;
+				margin-bottom: 15rem;
+
+				@media (max-width: 1260px) and (min-width: 769px) {
+					gap: 2rem;
+				}
+
+				@media #{$tab} {
+					gap: 2.8rem;
+					margin-bottom: 4rem;
+				}
+
+				.banner__block {
+					width: 100%;
+					max-width: 54rem;
+
+					.block__ttl {
+						margin-bottom: 1.7rem;
+						font-size: 2.4rem;
+						font-weight: 700;
+						letter-spacing: 0.05rem;
+						text-align: center;
+
+						@media #{$tab} {
+							margin-bottom: 1.2rem;
+							font-size: 1.4rem;
+						}
+
+						.-blu {
+							font-size: 4rem;
+
+							@media #{$tab} {
+								font-size: 2.4rem;
+							}
+						}
+					}
+
+					.block__btn {
+						@include transit;
+						display: block;
+
+						&:hover {
+							opacity: 0.7;
+						}
+					}
+				}
+			}
+
+			.carrier__frame {
+				width: 100%;
+				max-width: 1000px;
+				padding: 5.9rem 6rem 4.7rem;
+				margin: 0 auto 8rem;
+				background: $white_fff;
+				box-shadow: 0 0 6rem rgba($black_000, 9%);
+				border-top: 0.6rem solid $primary;
+				border-radius: 0.3rem;
+
+				@media #{$tab} {
+					padding: 3.7rem 1.5rem 4rem;
+					margin: 0 auto 5rem;
+					border-radius: 0.6rem;
+				}
+
+				.frame__ttl {
+					margin-bottom: 1.6rem;
+					color: $black_333;
+					font-size: 3.6rem;
+					font-weight: 700;
+					line-height: 1.4;
+					letter-spacing: 0.05rem;
+					text-align: center;
+
+					@media #{$tab} {
+						margin-bottom: 2.3rem;
+						font-size: 2.4rem;
+						line-height: 1.3;
+					}
+				}
+
+				.frame__txt {
+					width: 100%;
+					max-width: 80rem;
+					margin: 0 auto 5.8rem;
+					font-size: 1.6rem;
+					font-weight: 500;
+					line-height: 2;
+
+					@media #{$tab} {
+						margin-bottom: 2.7rem;
+						font-size: 1.4rem;
+						line-height: 1.9;
+					}
+				}
+
+				.frame__guide {
+					margin-bottom: 1rem;
+					font-size: 1.4rem;
+					font-weight: 500;
+					background: $gray_eae;
+				}
+
+				.frame__tbl {
+					overflow: auto;
+
+					table {
+						width: 88rem;
+						border-spacing: 0;
+
+						@media #{$tab} {
+							width: 100%;
+							border-bottom: 0.2rem solid $gray_eae;
+						}
+
+						tr {
+							&:nth-child(1) {
+								th {
+									&:nth-child(1) {
+										width: 17rem;
+
+										@media #{$tab} {
+											width: 18%;
+										}
+									}
+
+									&:nth-child(2) {
+										width: 35.5rem;
+
+										@media #{$tab} {
+											width: 41%;
+										}
+									}
+
+									&:nth-child(3) {
+										width: 35.5rem;
+
+										@media #{$tab} {
+											width: 41%;
+										}
+									}
+								}
+							}
+
+							th ,
+							td {
+								text-align: center;
+								border-top: 0.2rem solid $gray_eae;
+
+								img {
+									margin: 0 auto;
+								}
+							}
+
+							th {
+								padding: 2.3rem 0;
+								font-size: 1.8rem;
+								font-weight: 700;
+								line-height: 1.4;
+								letter-spacing: 0.05rem;
+
+								@media #{$tab} {
+									padding: 1.4rem 0;
+									font-size: 1.4rem;
+									line-height: 1.8;
+								}
+
+								.-img01 {
+									@media #{$tab} {
+										width: 15.6rem;
+									}
+								}
+
+								.-img02 {
+									@media #{$tab} {
+										width: 10.1rem;
+									}
+								}
+							}
+
+							td {
+								padding: 2.5rem 2rem 3.3rem;
+								font-feature-settings: 'palt';
+								font-size: 1.6rem;
+								font-weight: 500;
+								line-height: 1.75;
+								vertical-align: baseline;
+
+								@media #{$tab} {
+									padding: 1.5rem 1rem 1.8rem;
+									font-size: 1.3rem;
+									line-height: 1.5;
+								}
+
+								.-pik {
+									font-weight: 700;
+								}
+
+								.-txt {
+									position: relative;
+									padding-top: 6.7rem;
+
+									@media #{$tab} {
+										padding-top: 5.9rem;
+									}
+
+									&::after {
+										position: absolute;
+										top: 0;
+										left: 50%;
+										width: 5rem;
+										height: 5rem;
+										content: '';
+										transform: translateX(-50%);
+									}
+
+									&.-p__cir::after {
+										background: url(../../Image/Front/ico_carrier01.svg)
+										no-repeat center center / 100% auto;
+									}
+
+									&.-g__tri::after {
+										width: 5.8rem;
+										background: url(../../Image/Front/ico_carrier02.svg)
+										no-repeat center center / 100% auto;
+									}
+
+									&.-g__cir::after {
+										background: url(../../Image/Front/ico_carrier03.svg)
+										no-repeat center center / 100% auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.carrier__site {
+				align-items: center;
+				flex-wrap: wrap;
+				justify-content: center;
+				display: flex;
+				width: 100%;
+				max-width: 80rem;
+				margin: 9.5rem auto;
+
+				@media #{$tab} {
+					margin: 5rem auto;
+				}
+
+				.site__txt {
+					width: calc(100% - 40.4rem);
+					font-size: 2.4rem;
+					font-weight: 700;
+					line-height: 1.4;
+					letter-spacing: 0.05rem;
+					text-align: center;
+
+					@media #{$tab} {
+						width: 100%;
+						margin-bottom: 1.7rem;
+						font-size: 1.6rem;
+					}
+
+					.-blu {
+						font-size: 2.8rem;
+
+						@media #{$tab} {
+							font-size: 1.8rem;
+						}
+					}
+				}
+
+				.site__btn {
+					@include transit;
+					width: 40.4em;
+
+					@media #{$tab} {
+						width: 25.8rem;
+					}
+
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+
+	.pageTopColumn {
+		padding: 11rem 0;
+
+		@media #{$tab} {
+			padding: 6rem 0;
+		}
+
+		.pageTopColumn__title {
+			align-items: center;
+			flex-direction: column;
+			gap: 2rem;
+			display: flex;
+			margin-bottom: 4rem;
+			font-size: 3rem;
+
+			@media #{$tab} {
+				font-size: 2.4rem;
+			}
+
+			&::after {
+				display: inline-block;
+				width: 5.2rem;
+				height: 0.2rem;
+				content: '';
+				background-color: $primary;
+			}
+		}
+
+		.pageTopColumn__list {
+			gap: 2rem;
+			display: flex;
+			margin-bottom: 6rem;
+
+			@media #{$tab} {
+				flex-direction: column;
+				gap: 3rem;
+				margin-bottom: 4rem;
+			}
+		}
+
+		.sec__detail {
+			color: $black_000;
+		}
+	}
+
+	@at-root {
+		.pageTop__faq {
+			padding: 9.3rem 0 12rem;
+
+			@media #{$tab} {
+				padding: 5.7rem 0 8rem;
+			}
+
+			.inner {
+				.sec__ttl {
+					margin-bottom: 4.8rem;
+
+					@media #{$tab} {
+						margin-bottom: 2.3rem;
+					}
+				}
+
+				.faq__lst {
+					width: 100%;
+					max-width: 100rem;
+					margin: 0 auto 6.4rem;
+
+					.faq__block {
+						padding: 3.2rem 3.5rem;
+						margin-bottom: 3rem;
+						background: $gray_f8f;
+						border-radius: 0.3rem;
+
+						@media #{$tab} {
+							padding: 2rem 1rem 2rem 1.5rem;
+							margin-bottom: 2rem;
+						}
+
+						.block__head {
+							position: relative;
+							align-items: center;
+							display: flex;
+							padding-right: 4rem;
+							padding-left: 1rem;
+
+							@media #{$tab} {
+								align-items: flex-start;
+								padding-right: 1.6rem;
+								padding-left: 0;
+							}
+
+							.head__ico {
+								@include jost;
+								align-items: center;
+								justify-content: center;
+								display: flex;
+								width: 3.3rem;
+								height: 3.3rem;
+								margin-right: 1.4rem;
+								color: $white_fff;
+								font-size: 1.6rem;
+								font-weight: 500;
+								background: $primary;
+
+								@media #{$tab} {
+									width: 2.7rem;
+									height: 2.7rem;
+									margin-right: 0.8rem;
+								}
+							}
+
+							.head__ttl {
+								width: calc(100% - 4.7rem);
+								font-size: 1.8rem;
+								font-weight: 700;
+								line-height: 1.7;
+								letter-spacing: 0.05rem;
+								cursor: pointer;
+
+								@media #{$tab} {
+									width: calc(100% - 3.5rem);
+									font-size: 1.6rem;
+								}
+							}
+						}
+
+						.block__cnt {
+							display: none;
+							padding: 2.2rem 3.5rem 0 5.7rem;
+							margin-top: 2rem;
+							border-top: 0.1rem solid $gray_aaa;
+
+							@media #{$tab} {
+								padding: 1.4rem 0 0 3.6rem;
+								margin-top: 1.5rem;
+							}
+
+							.faq__txt {
+								font-size: 1.8rem;
+								font-weight: 500;
+								line-height: 1.7;
+
+								@media #{$tab} {
+									font-size: 1.6rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pageTop__news {
+		padding-bottom: 12rem;
+
+		@media #{$tab} {
+			padding-bottom: 8rem;
+		}
+
+		.sec__ttl {
+			margin-bottom: 5.4rem;
+
+			@media #{$tab} {
+				margin-bottom: 2.4rem;
+			}
+		}
+
+		.main__lst {
+			padding-top: 2.4rem;
+			margin-bottom: 6rem;
+			border-top: 0.1rem solid #f7f6f0;
+
+			@media #{$tab} {
+				padding-top: 0;
+				margin-bottom: 4rem;
+			}
+		}
+	}
+}
+
+.usageCTA {
+	.usage__txt {
+		margin-bottom: 0.9rem;
+		color: $black_333;
+		font-size: 2.8rem;
+		font-weight: 700;
+		line-height: 1.4;
+		letter-spacing: 0.05rem;
+		text-align: center;
+
+		@media #{$tab} {
+			margin-bottom: 2.2rem;
+			font-feature-settings: 'palt';
+			font-size: 1.6rem;
+		}
+
+		.-blu {
+			font-size: 3.6rem;
+
+			@media #{$tab} {
+				font-size: 2.4rem;
+			}
+		}
+	}
+}
