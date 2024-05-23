@@ -88,7 +88,7 @@
 						</a>
 					</li>
 					<li class="lst__item">
-						<a href="https://sub.cpa-career.jp/about">
+						<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener">
 							サービス紹介
 						</a>
 
@@ -97,13 +97,13 @@
 								<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener">CPASSキャリアについて</a>
 							</li>
 							<li class="sub__item">
-								<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener">キャリア名鑑</a>
+							<a href="<?php echo home_url("/faq/"); ?>">FAQ</a>
 							</li>
-							<!-- <li class="sub__item">
-                                <a href="<?php echo home_url("/faq/"); ?>">FAQ</a>
-                            </li> -->
 							<li class="sub__item">
 								<a href="https://cpass-net.jp/events" target="_blank" rel="noopener">CPASSイベント</a>
+							</li>
+							<li class="sub__item">
+								<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener">キャリア名鑑</a>
 							</li>
 						</ul>
 					</li>

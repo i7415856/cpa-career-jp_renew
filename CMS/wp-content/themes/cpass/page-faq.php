@@ -13,7 +13,7 @@ get_header(); ?>
 <main class="pageFaq pages">
 	<section class="pages__kv">
 		<div class="inner">
-			<h2 class="kv__ttl">Q&A</h2>
+			<h2 class="kv__ttl">FAQ</h2>
 			<p class="kv__txt"><span>よくあるご質問</span></p>
 		</div>
 	</section>
