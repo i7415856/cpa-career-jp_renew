@@ -358,7 +358,7 @@ get_header(); ?>
 				</a>
 			</div>
 
-			<a href="https://sub.cpa-career.jp/about" class="sec__detail">詳細はこちら</a>
+			<a href="<?php echo home_url("/consultant/"); ?>" class="sec__detail">詳細はこちら</a>
 
 			<p class="account__txt -txt02">会計人材専門コンサルタントならではの<br>
 				<span class="-blu">非公開求人を見る</span>なら、<span class="-blu">今すぐ！</span>
