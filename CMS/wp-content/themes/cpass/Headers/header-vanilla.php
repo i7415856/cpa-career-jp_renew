@@ -40,6 +40,11 @@
                         </li>
                     </ul>
                 </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="<?php echo home_url("/column/"); ?>">コラム</a>
+                </li>
+<!--
                 <li class="menu__item -has-submenu">
                     <span class="menu__link">コラム</span>
                     <ul class="submenu -tight">
@@ -50,8 +55,8 @@
                             <a href="<?php echo home_url("/knowhow/"); ?>" class="submenu__link">転職ノウハウ</a>
                         </li>
                     </ul>
-
                 </li>
+ -->
                 <li class="menu__item">
                     <a class="menu__link" href="<?php echo home_url("/case/"); ?>">転職成功事例</a>
                 </li>
