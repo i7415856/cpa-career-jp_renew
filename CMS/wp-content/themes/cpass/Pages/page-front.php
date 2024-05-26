@@ -272,8 +272,6 @@ get_header(); ?>
 			<?php
 			$args = [
 				'post_type' => 'case',
-				'orderby' => 'post_date',
-				'order' => 'DESC',
 				'posts_per_page' => 5,
 			];
 			$WP_post = new WP_Query($args);
