@@ -88,9 +88,7 @@
 						</a>
 					</li>
 					<li class="lst__item">
-						<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener">
 							サービス紹介
-						</a>
 
 						<ul class="sub_menu">
 							<li class="sub__item">
@@ -170,9 +168,7 @@
 				</ul>
 				<ul class="menu__lst">
 					<li class="lst__item">
-						<a>
-							グループサービス
-						</a>
+						グループサービス
 
 						<ul class="sub_menu">
 							<li class="sub__item">
@@ -211,7 +207,7 @@
 			</div>
 
 			<div class="footer__bottomLeft">
-				<a href="https://cpass-net.jp/events" target="_blank" rel="noopener" class="footer__bottomLeftLink">
+				<a href="https://cpass-net.jp/" target="_blank" rel="noopener" class="footer__bottomLeftLink">
 					<img src="<?php echo get_template_directory_uri() . '/Image/common/banner_footer_1.png' ?>" alt="">
 				</a>
 				<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener" class="footer__bottomLeftLink">
