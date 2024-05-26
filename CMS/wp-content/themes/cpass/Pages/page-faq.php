@@ -39,7 +39,6 @@ get_header(); ?>
 				$args = array(
 					'post_type' => 'faq',
 					'paged' => vanilla_paged(),
-					'order' => 'DESC',
 					'posts_per_page' => 10,
 				);
 

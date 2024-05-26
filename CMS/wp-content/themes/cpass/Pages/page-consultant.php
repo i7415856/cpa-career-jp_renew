@@ -36,8 +36,6 @@ get_header(); ?>
 				$args = [
 					'post_type' => 'consultant',
 					'paged' => vanilla_paged(),
-					'orderby' => 'post_date',
-					'order' => 'DESC',
 					'posts_per_page' => -1,
 				];
 				$WP_post = new WP_Query($args);
