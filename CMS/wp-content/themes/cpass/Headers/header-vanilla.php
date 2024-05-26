@@ -25,7 +25,7 @@
                     <ul class="submenu -wide">
                         <li class="submenu__item -sp-order1">
                             <a href="https://sub.cpa-career.jp/about" target="_blank"
-                                class="submenu__link">CPASSキャリアについて</a>
+                                class="submenu__link -external-link">CPASSキャリアについて</a>
                         </li>
                         <li class="submenu__item -sp-order3">
                             <a href="https://www.cpa-learning.com/career-directory/"
