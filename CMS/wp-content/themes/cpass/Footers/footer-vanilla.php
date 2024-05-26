@@ -239,39 +239,20 @@
 							</a>
 						</li>
 						<li class="lst__item">
-							<a href="https://sub.cpa-career.jp/about">
 								サービス紹介
-							</a>
 
 							<ul class="sub_menu">
 								<li class="sub__item">
 									<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener">CPASSキャリアについて</a>
 								</li>
 								<li class="sub__item">
+									<a href="<?php echo home_url("/faq/"); ?>">FAQ</a>
+								</li>
+								<li class="sub__item">
 									<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener">キャリア名鑑</a>
 								</li>
-								<!-- <li class="sub__item">
-                                    <a href="<?php echo home_url("/faq/"); ?>">FAQ</a>
-                                </li> -->
 								<li class="sub__item">
 									<a href="https://cpass-net.jp/events" target="_blank" rel="noopener">CPASSイベント</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-
-					<ul class="menu__lst">
-						<li class="lst__item">
-							<a href="<?php echo home_url("/column/"); ?>">
-								コラム
-							</a>
-
-							<ul class="sub_menu">
-								<li class="sub__item">
-									<a href="<?php echo home_url("/column/"); ?>">コラム一覧</a>
-								</li>
-								<li class="sub__item">
-									<a href="<?php echo home_url("/knowhow/"); ?>">転職ノウハウ</a>
 								</li>
 							</ul>
 						</li>
@@ -279,7 +260,12 @@
 				</div>
 				<div class="footer__menu--right">
 					<ul class="menu__lst">
-						<li class="lst__item">
+					<li class="lst__item">
+							<a href="<?php echo home_url("/column/"); ?>">
+								コラム
+							</a>
+					</li>
+					<li class="lst__item">
 							<a href="<?php echo home_url("/case/"); ?>">
 								転職成功事例
 							</a>
@@ -314,7 +300,7 @@
 							</a>
 						</li>
 						<li class="lst__item">
-							<a href="<?php echo home_url("/privacypolicy/"); ?>" target="_blank" rel="noopener">
+							<a href="<?php echo home_url("/privacypolicy/"); ?>">
 								プライバシーポリシー
 							</a>
 						</li>
@@ -327,9 +313,7 @@
 				</div>
 				<ul class="menu__lst">
 					<li class="lst__item">
-						<a>
-							グループサービス
-						</a>
+						グループサービス
 
 						<ul class="sub_menu">
 							<li class="sub__item">
@@ -368,7 +352,7 @@
 			</div>
 
 			<div class="footer__bottomLeft">
-				<a href="https://cpass-net.jp/events" target="_blank" rel="noopener" class="footer__bottomLeftLink">
+				<a href="https://cpass-net.jp/" target="_blank" rel="noopener" class="footer__bottomLeftLink">
 					<img src="<?php echo get_template_directory_uri() . '/Image/common/banner_footer_1.png' ?>" alt="">
 				</a>
 				<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener" class="footer__bottomLeftLink">
