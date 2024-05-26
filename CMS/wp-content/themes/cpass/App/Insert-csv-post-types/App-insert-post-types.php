@@ -87,6 +87,12 @@ function insert_post_types() {
 					'has_archive' => false, //アーカイブページは固定ページで生成
 					'menu_position' => 5, // 管理画面上でどこに配置するか
 					'hierarchical' => true, // 投稿同士の階層
+					//スラッグを指定したもので設定
+					'rewrite' => array(
+						'slug' => $data[i('スラッグ', $th_array)], // カスタム投稿タイプのスラッグ
+						'with_front' => false, // 前後のスラッシュを含めない
+						'feeds' => true,
+					),
 					//投稿編集ページの設定
 					'supports' => $post_type_supports,
 					'show_in_rest' => true,
