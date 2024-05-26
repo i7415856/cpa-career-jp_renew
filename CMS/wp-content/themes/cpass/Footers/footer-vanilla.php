@@ -156,7 +156,7 @@
 						</a>
 					</li>
 					<li class="lst__item">
-						<a href="<?php echo home_url("/privacypolicy/"); ?>" target="_blank" rel="noopener">
+						<a href="<?php echo home_url("/privacypolicy/"); ?>">
 							プライバシーポリシー
 						</a>
 					</li>
