@@ -82,12 +82,6 @@ get_header(); ?>
 						'attr' => 'href="' . home_url('/faq/') . '"',
 						'tag' => 'a',
 					]) ?>
-					<?php button_type1([
-						'text' => 'CPASSキャリアについての<br>ご質問一覧を見る',
-						'class' => '-text-left',
-						'attr' => 'href="' . home_url('/faq/') . '"',
-						'tag' => 'a',
-					]) ?>
 				</div>
 			</div>
 		</section>
