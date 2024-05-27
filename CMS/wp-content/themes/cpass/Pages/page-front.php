@@ -752,8 +752,6 @@ get_header(); ?>
 
 	<?php $args = [
 		'post_type' => 'post',
-		'paged' => vanilla_paged(),
-		'order' => 'DESC',
 		'posts_per_page' => 3,
 	];
 
