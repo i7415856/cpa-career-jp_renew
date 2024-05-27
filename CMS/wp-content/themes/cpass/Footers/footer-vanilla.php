@@ -98,10 +98,10 @@
 							<a href="<?php echo home_url("/faq/"); ?>">FAQ</a>
 							</li>
 							<li class="sub__item">
-								<a href="https://cpass-net.jp/events" target="_blank" rel="noopener">CPASSイベント</a>
+								<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener">キャリア名鑑</a>
 							</li>
 							<li class="sub__item">
-								<a href="https://www.cpa-learning.com/career-directory/" target="_blank" rel="noopener">キャリア名鑑</a>
+								<a href="https://cpass-net.jp/events" target="_blank" rel="noopener">CPASSイベント</a>
 							</li>
 						</ul>
 					</li>
