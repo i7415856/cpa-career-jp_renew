@@ -57,7 +57,7 @@ get_header(); ?>
 				<div class="access__intro">
 					<p class="intro__txt"><span class="-bg">新宿の伊勢丹メンズ館のすぐ隣り、新宿三丁目駅B5出口から徒歩2分、B3出口から徒歩3分</span>の好立地にオフィスを移転いたしました。</p>
 
-					<p class="intro__txt">CPA会計学院新宿校と同じビルに入っています。同フロアには日本最大級の会計人材の社交の場「CPASS LOUNGE（シーパスラウンジ：<a href="https://cpass-net.jp/cpasslounge" class="-link">https://cpass-net.jp/cpasslounge</a>）も併設されています。<br>新宿にお買い物に来たついでに、CPA会計学院の新宿校に遊びに来たついでに、CPASS LOUNGEのイベントが開催する前に、是非とも気軽にご相談にいらしてください。</p>
+					<p class="intro__txt">CPA会計学院新宿校と同じビルに入っています。同フロアには日本最大級の会計人材の社交の場「CPASS LOUNGE（シーパスラウンジ：<a href="https://cpass-net.jp/cpasslounge" class="-link" target="_blank" rel="noopener">https://cpass-net.jp/cpasslounge</a>）も併設されています。<br>新宿にお買い物に来たついでに、CPA会計学院の新宿校に遊びに来たついでに、CPASS LOUNGEのイベントが開催する前に、是非とも気軽にご相談にいらしてください。</p>
 
 					<figure class="intro__img"><img src="<?php echo get_template_directory_uri() ?>/Image/company/img03.png" alt=""></figure>
 				</div>
