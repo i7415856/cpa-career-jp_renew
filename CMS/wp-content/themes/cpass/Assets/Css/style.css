@@ -3436,10 +3436,10 @@ table.-sp-only {
   }
 }
 .career__lst .item__infor {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -3532,6 +3532,7 @@ table.-sp-only {
   color: #00b2c4;
   font-size: 1.9rem;
   font-weight: 700;
+  flex-direction: column;
 }
 .career__lst .infor__right > span {
   display: inline-block;
@@ -5927,6 +5928,7 @@ table.-sp-only {
 }
 .pageTop .pageTop__career .inner .career__lst .infor__right {
   font-size: 2.4rem;
+  flex-direction: column;
 }
 .pageTop .pageTop__career .inner .career__lst .infor__right > span {
   padding: 0 0.6rem;
