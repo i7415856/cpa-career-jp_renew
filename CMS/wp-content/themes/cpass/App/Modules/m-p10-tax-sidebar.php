@@ -8,7 +8,7 @@ function tax_sidebar($taxonomy, $args = []) {
 	$all_active_class = (!is_single() && !isset($param['term'])) ? '-active' : '';
 	$archive_page_name = vanilla_get_archive_page_name();
 	$terms = get_terms($taxonomy, $args);
-	if ($terms && count($terms) > 3) {
+	if ($terms && count($terms) >= 1) {
 ?>
 		<aside class="block__side">
 			<p class="side__ttl">カテゴリ</p>
