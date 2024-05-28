@@ -312,7 +312,7 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account01.jpg" alt>
 					</figure>
 					<p class="item__ttl">
-						<span>2,500名以上の</span>
+						<span>3,000名以上の</span>
 						<br>
 						<span>転職支援実績</span>
 					</p>
@@ -352,7 +352,7 @@ get_header(); ?>
 						<br>
 						<span>できるサポートを</span>
 					</p>
-					<p class="item__name">大島 悠臣</p>
+					<p class="item__name">菅井 剛</p>
 				</a>
 			</div>
 
