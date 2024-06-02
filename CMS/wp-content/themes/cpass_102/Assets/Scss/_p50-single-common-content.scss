@@ -1,0 +1,195 @@
+.postContentsCommonStyle {
+	// ---------- テキスト ----------
+	a ,
+	p ,
+	li ,
+	dd ,
+	td ,
+	span ,
+	pre ,
+	strong ,
+	em {
+		// font-size: 1.6rem;
+
+		// @media#{$tab} {
+		// 	font-size: 1.2rem;
+		// }
+	}
+
+	// ---------- 見出し ----------
+	h1:not([class]) {
+		margin-bottom: 0.5em;
+		font-size: 3.2rem;
+		font-weight: bold;
+
+		@media#{$tab} {
+			font-size: 2.4rem;
+		}
+	}
+
+	h2:not([class]) {
+		width: 100%;
+		margin-bottom: 3.2rem;
+		color: $primary;
+		font-size: 2.8rem;
+		font-weight: bold;
+
+		@media#{$tab} {
+			font-size: 2.4rem;
+		}
+	}
+
+	h3:not([class]) {
+		padding-bottom: 0.8rem;
+		margin-bottom: 3.2rem;
+		font-size: 2.4rem;
+		font-weight: bold;
+		border-bottom: 0.3rem solid $primary;
+
+		@media#{$tab} {
+			padding-bottom: 0.6rem;
+			font-size: 1.8rem;
+			font-size: 2rem;
+		}
+	}
+
+	h4:not([class]) {
+		position: relative;
+		width: 100%;
+		padding-left: 1rem;
+		margin-bottom: 3.2rem;
+		font-size: 1.8rem;
+		font-weight: bold;
+		border-left: 0.5rem solid $primary;
+
+		@media#{$tab} {
+			font-size: 1.6rem;
+		}
+	}
+
+	h5:not([class]) {
+		margin-bottom: 3.2em;
+		font-size: 1.7rem;
+		font-weight: bold;
+
+		@media#{$tab} {
+			font-size: 1.6rem;
+		}
+	}
+
+	h6:not([class]) {
+		position: relative;
+		padding-left: 3rem;
+		margin-bottom: 3.2em;
+		font-size: 1.7rem;
+		font-weight: bold;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: $primary;
+			content: '●';
+			font-size: 1em;
+		}
+
+		@media#{$tab} {
+			font-size: 1.6rem;
+		}
+	}
+
+	// ---------- 画像 ----------
+	img {
+		display: inline-block;
+		height: auto;
+		max-width: 100%;
+		margin: 2.4rem 0;
+		vertical-align: middle;
+	}
+
+	// ---------- 注釈 ----------
+	blockquote {
+		position: relative;
+		padding: 1.3rem 1.5rem 1.3rem 5rem;
+		background-color: $gray_dbd;
+
+		&::before {
+			position: absolute;
+			top: 20px;
+			left: 15px;
+			display: inline-block;
+			color: $primary;
+			content: '\f10d';
+			font-family: FontAwesome;
+			font-size: 25px;
+			line-height: 1;
+			vertical-align: middle;
+		}
+
+		p {
+			padding: 0;
+			margin-top: 10px;
+			line-height: 1.7;
+		}
+	}
+
+	// ---------- リスト ----------
+	ul {
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	ul ,
+	ol {
+		margin-bottom: 1em;
+
+		li {
+			margin-left: 1.6em;
+			font-size: 1.6rem;
+
+			@media#{$tab} {
+				font-size: 1.2rem;
+			}
+
+			&::marker {
+				color: $primary; //リストのマーカーの色を変えたければここを変更
+
+				marker-offset: 0;
+			}
+		}
+	}
+
+	ul li {
+		list-style-type: disc;
+	}
+
+	ol li {
+		list-style-type: decimal;
+	}
+
+	// ---------- リンク ----------
+	a {
+		color: $primary;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	// ---------- テーブル ----------
+	table {
+		& ,
+		* {
+			border: 1px solid $primary;
+		}
+
+		tr {
+			td {
+				padding: 0.8rem;
+			}
+		}
+	}
+}

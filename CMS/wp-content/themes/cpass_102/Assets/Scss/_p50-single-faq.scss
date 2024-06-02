@@ -1,0 +1,143 @@
+.singleFaq {
+	.breadcrumb {
+		margin-top: 6rem;
+		margin-bottom: 8rem;
+
+		@media #{$tab} {
+			margin-top: 3rem;
+			margin-bottom: 6rem;
+		}
+	}
+
+	.singleFaqMain {
+		margin-bottom: 8rem;
+	}
+
+	.singleFaqSection {
+		align-items: flex-start;
+		gap: 1.4rem;
+		display: flex;
+
+		&::before {
+			@include jost;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			min-width: 3.3rem;
+			color: $white_fff;
+			font-size: 1.6rem;
+
+			aspect-ratio: 1;
+		}
+
+		&.-q {
+			&::before {
+				content: 'Q';
+				background-color: $primary;
+			}
+		}
+
+		&.-a {
+			&::before {
+				content: 'A';
+				background-color: $pink_ff0;
+			}
+		}
+	}
+
+	.singleFaqHead {
+		.singleFaqHead__desc {
+			flex-direction: column;
+			display: flex;
+			padding-bottom: 4rem;
+			margin-bottom: 4rem;
+			border-bottom: 0.2rem solid $gray_eae;
+		}
+
+		.singleFaqHead__cats {
+			flex-wrap: wrap;
+			gap: 1.6rem;
+			display: flex;
+			margin-bottom: 0.8rem;
+		}
+
+		.singleFaqHead__cat {
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			padding: 0.2rem 0.5rem;
+			color: $primary;
+			font-size: 1.2rem;
+			font-weight: 600;
+			line-height: 1;
+			letter-spacing: 0;
+			background-color: $white_fff;
+			border: 0.1rem solid $primary;
+		}
+
+		.singleFaqHead__title {
+			font-size: 2.8rem;
+			font-weight: 600;
+			letter-spacing: 0.05em;
+		}
+	}
+
+	.singleFaq__content {
+		& > * {
+			font-size: 1.8rem;
+			font-weight: 500;
+			letter-spacing: 0;
+
+			@media #{$tab} {
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.singleFaqInformation {
+		margin-bottom: 10rem;
+
+		.singleFaqInformation__txt {
+			margin-bottom: 1.7rem;
+			color: $black_333;
+			font-size: 2.8rem;
+			font-weight: 700;
+			line-height: 1.4;
+			letter-spacing: 0.05rem;
+			text-align: center;
+
+			@media #{$tab} {
+				margin-bottom: 2.1rem;
+				font-feature-settings: 'palt';
+				font-size: 1.6rem;
+			}
+
+			.-blu {
+				font-size: 3.6rem;
+
+				@media #{$tab} {
+					font-size: 2.4rem;
+				}
+			}
+		}
+	}
+
+	.faqItem {
+		background-color: $white_fff;
+	}
+
+	.singleOtherPosts__bottonWrap {
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: space-between;
+		display: flex;
+		margin-top: 6rem;
+
+		@media #{$tab} {
+			align-items: center;
+			flex-direction: column;
+			margin-top: 4rem;
+		}
+	}
+}
