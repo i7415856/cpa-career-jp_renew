@@ -1,4 +1,5 @@
 <?php
+/*
 if (function_exists('acf_add_local_field_group')) {
 	acf_add_local_field_group(array(
 		'key' => 'tdk_acf',
@@ -70,6 +71,7 @@ if (function_exists('acf_add_local_field_group')) {
 		'hide_on_screen' => '',
 	));
 }
+*/
 
 /**
  * カスタムカラムを追加する

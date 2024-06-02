@@ -77,33 +77,31 @@ function vanilla_meta_ogp() {
 		$ogp_url = '';
 		$html = '';
 
-
 		//== 記事＆固定ページ ====
 		if (is_singular()) {
 			setup_postdata($post);
-
-			$seo_title = get_field('seo_title');
-			$seo_description = get_field('seo_description');
-			$ogp_title = "{$seo_title}";
-			$ogp_description = $seo_description;
+			$ogp_title = "{$post->post_title} | {$site_title}";
+			$ogp_description = get_the_excerpt($post) ? get_the_excerpt($post) : get_the_content($post);
 
 			$ogp_url = get_permalink();
 			wp_reset_postdata();
 
 			if ($post->post_type === 'case') {
-				$ogp_description = $seo_description;
-				$ogp_title = "転職成功事例{$seo_title}";
+				$ogp_description = get_field('single_case_story', $post->ID);
+				$ogp_title = "転職成功事例{$post->post_title} | {$site_title}";
 			} elseif ($post->post_type === 'consultant') {
-				$ogp_title = "CPASSコンサルタント{$seo_title}";
+				$ogp_title = "CPASSコンサルタント{$post->post_title} | {$site_title}";
+			}
+
+			if (is_front_page()) {
+				$ogp_title = "会計人材の転職サポート | {$site_title}";
 			}
 
 		} elseif (is_home()) {
 			$posts_page_id = get_option('page_for_posts');
 			$post = get_post($posts_page_id);
-			$seo_title = get_field('seo_title');
-			$seo_description = get_field('seo_description');
-			$ogp_title = "{$seo_title}";
-			$ogp_description = $seo_description;
+			$ogp_title = "{$post->post_title} | {$site_title}";
+			$ogp_description = get_the_excerpt($post) ? get_the_excerpt($post) : get_the_content($post);
 			$ogp_url = get_permalink();
 		}
 
