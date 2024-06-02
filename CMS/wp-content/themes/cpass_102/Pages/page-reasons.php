@@ -137,7 +137,7 @@ get_header(); ?>
 	<section class="about_flow">
 		<div class="inner -maw-100rem">
 			<h3 class="flow_ttl about_secTtl">
-				<span class="en">Flow of using CPASS carrier</span>
+				<span class="en">Flow of using CPASS CAREER</span>
 				<span class="jp">CPASSキャリア<br class="-sp-only">ご利用の流れ</span>
 			</h3>
 
