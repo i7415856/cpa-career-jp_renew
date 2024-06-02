@@ -307,7 +307,7 @@ get_header(); ?>
 			</p>
 
 			<div class="account__lst">
-				<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener" class="account__item">
+				<a href="/consultant/nakazono_hayato.html" class="account__item">
 					<figure class="item__img">
 						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account01.jpg" alt>
 					</figure>
@@ -319,7 +319,7 @@ get_header(); ?>
 					<p class="item__name">中園 隼人</p>
 				</a>
 
-				<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener" class="account__item">
+				<a href="/consultant/komai_shigeru.html" class="account__item">
 					<figure class="item__img">
 						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account02.jpg" alt>
 					</figure>
@@ -331,7 +331,7 @@ get_header(); ?>
 					<p class="item__name">駒井 滋</p>
 				</a>
 
-				<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener" class="account__item">
+				<a href="/consultant/shimizu_tomomi.html" class="account__item">
 					<figure class="item__img">
 						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account03.jpg" alt>
 					</figure>
@@ -343,7 +343,7 @@ get_header(); ?>
 					<p class="item__name">清水 知美</p>
 				</a>
 
-				<a href="https://sub.cpa-career.jp/about" target="_blank" rel="noopener" class="account__item">
+				<a href="/consultant/sugai_go.html" class="account__item">
 					<figure class="item__img">
 						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account04.jpg" alt>
 					</figure>
