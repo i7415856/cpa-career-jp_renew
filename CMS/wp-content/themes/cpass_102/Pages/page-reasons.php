@@ -13,12 +13,12 @@ get_header(); ?>
 	<section class="pages__breadcrumb">
 		<div class="inner">
 			<div class="breadcrumb">
-				<ul class="breadcrumb__list">
+			<ul class="breadcrumb__list">
 					<li class="breadcrumb__item">
-						<a href="#" class="breadcrumb__link">トップ</a>
+						<a href="/" class="breadcrumb__link">トップ</a>
 					</li>
 					<li class="breadcrumb__item">
-						<a href="#" class="breadcrumb__link">CPASSキャリアについて</a>
+						<a href="/reasons/" class="breadcrumb__link">CPASSキャリアについて</a>
 					</li>
 				</ul>
 			</div>
