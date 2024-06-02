@@ -20,6 +20,16 @@ function vanilla_allowed_block_types($allowed_blocks) {
 		'vanilla-custom-block/column-heading-h3',
 		'core/paragraph',
 		'core/image',
+		'core/freeform',
+		'core/table',
+		'core/embed',
+		'core/html',
+		'core/list',
+		'core/list-item',
+		'core/separator',
+		'core/spacer',
+		'core/buttons',
+		'core/columns',
 		// 他の許可したいブロックをここに追加
 	);
 
