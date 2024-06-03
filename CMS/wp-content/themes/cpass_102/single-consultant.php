@@ -36,7 +36,7 @@ get_header(); ?>
 
 			<article class="singleConsultantProfile">
 				<figure class="singleConsultantProfile__figure">
-					<img src="<?php echo get_field('single_consultant_profile_thumbnail') ?>" alt="<?php echo get_field('single_consultant_profile_name_ja') ?>" class="singleConsultantProfile__img">
+					<img src="<?php echo get_field('single_consultant_profile_thumbnail') ?>" alt="<?php echo get_field('single_consultant_profile_position') . " " .get_field('single_consultant_profile_name_ja') ?>" class="singleConsultantProfile__img">
 				</figure>
 
 

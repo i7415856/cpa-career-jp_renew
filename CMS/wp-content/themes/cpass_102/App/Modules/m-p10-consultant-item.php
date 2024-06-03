@@ -5,7 +5,7 @@ function consultant_item($post) {
 	<a href="<?php echo esc_url(get_permalink($post)); ?>" class="consultantItem">
 		<figure class="item__img">
 			<?php if (get_field('single_consultant_profile_thumbnail', $post->ID)) { ?>
-				<img src="<?php echo get_field('single_consultant_profile_thumbnail', $post->ID) ?>" alt="中園 隼人">
+				<img src="<?php echo get_field('single_consultant_profile_thumbnail', $post->ID) ?>" alt="<?php echo get_field('single_consultant_profile_position') . " " .get_field('single_consultant_profile_name_ja') ?>">
 			<?php } ?>
 		</figure>
 
