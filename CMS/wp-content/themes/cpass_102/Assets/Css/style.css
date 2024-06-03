@@ -7901,7 +7901,6 @@ table.-sp-only {
   padding-bottom: clamp(8rem, 12.9056047198vw, 17.5rem);
   padding-left: 47%;
   margin-bottom: 10.5rem;
-  text-align: right;
 }
 @media only screen and (max-width:768px) {
   .pageAbout .about_reason .reason_item.-reason2 {
@@ -7909,7 +7908,6 @@ table.-sp-only {
     padding-bottom: 0;
     padding-left: 0;
     margin-bottom: 6rem;
-    text-align: left;
   }
 }
 .pageAbout .about_reason .reason_item.-reason2 .reason_img {
@@ -7927,7 +7925,7 @@ table.-sp-only {
   }
 }
 .pageAbout .about_reason .reason_item.-reason2 .reason_txt {
-  margin-left: 3.5rem;
+  /* margin-left: 3.5rem; */
 }
 @media only screen and (max-width:768px) {
   .pageAbout .about_reason .reason_item.-reason2 .reason_txt {
