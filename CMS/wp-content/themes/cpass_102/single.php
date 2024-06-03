@@ -56,10 +56,6 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<div class="singlePostTOC">
-					<?php echo do_shortcode('[ez-toc]') ?>
-				</div>
-
 				<div class="singlePostContent">
 					<div class="postContentsCommonStyle">
 						<?php the_content() ?>
