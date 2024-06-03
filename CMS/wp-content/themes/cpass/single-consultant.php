@@ -36,7 +36,7 @@ get_header(); ?>
 
 			<article class="singleConsultantProfile">
 				<figure class="singleConsultantProfile__figure">
-					<img src="<?php echo get_field('single_consultant_profile_thumbnail') ?>" alt="<?php echo get_field('single_consultant_profile_name_ja') ?>" class="singleConsultantProfile__img">
+					<img src="<?php echo get_field('single_consultant_profile_thumbnail') ?>" alt="<?php echo get_field('single_consultant_profile_position') . " " .get_field('single_consultant_profile_name_ja') ?>" class="singleConsultantProfile__img">
 				</figure>
 
 
@@ -45,11 +45,15 @@ get_header(); ?>
 					<p class="singleConsultantProfile__position"><?php echo get_field('single_consultant_profile_position') ?></p>
 					<p class="singleConsultantProfile__jaName"><?php echo get_field('single_consultant_profile_name_ja') ?></p>
 					<p class="singleConsultantProfile__enName"><?php echo get_field('single_consultant_profile_name_en') ?></p>
-					<div class="singleConsultantProfile__sns">
-						<a href="<?php echo get_field('single_consultant_profile_name_x') ?>" class="singleConsultantProfile__snsLink" target="_blank" rel="noopener">
-							<img src="<?php echo get_template_directory_uri() . '/Image/common/icon_x_black_1.svg' ?>" alt="x icon">
-						</a>
-					</div>
+
+					<?php if (get_field('single_consultant_profile_name_x')) :?>
+						<div class="singleConsultantProfile__sns">
+							<a href="<?php echo get_field('single_consultant_profile_name_x') ?>" class="singleConsultantProfile__snsLink" target="_blank" rel="noopener">
+								<img src="<?php echo get_template_directory_uri() . '/Image/common/icon_x_black_1.svg' ?>" alt="x icon">
+							</a>
+						</div>
+					<?php endif;?>
+
 				</div>
 			</article>
 
