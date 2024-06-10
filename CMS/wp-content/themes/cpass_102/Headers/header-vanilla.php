@@ -67,7 +67,7 @@
             <div class="menu__buttons">
                 <div class="menu__buttonWrap">
                     <!-- <a class="menu__buttonPerson -primary" href="__TBD__" target="_blank" rel="noopener">会計士受験生は<span class="menu__buttonPersonText">こちら</span></a>
-										<a class="menu__buttonPerson -yellow" href="https://cpass.eeasy.jp/cpass/2022090101" target="_blank" rel="noopener">ご登録済みの方は<span class="menu__buttonPersonText">こちら</span></a> -->
+										<a class="menu__buttonPerson -yellow" href="https://cpass.eeasy.jp/cpass/20240522hp" target="_blank" rel="noopener">ご登録済みの方は<span class="menu__buttonPersonText">こちら</span></a> -->
                     <a href="https://cpa-career-new-journey.studio.site/" target="_blank" rel="noopener"
                         class="sec__btn sec__btn--portal">
                         <span class="sec__btnText">公認会計士試験から<span class="-yel-underline">撤退</span>を<br class="-sp-only">
@@ -78,7 +78,7 @@
                         <span class="sec__btnText">無料転職支援サービス<span class="-yel">お申し込み</span></span>
                     </a>
                 </div>
-                <span class="menu__btnCaption">ご登録済みの方は<a href="https://cpass.eeasy.jp/cpass/2022090101" target="_blank"
+                <span class="menu__btnCaption">ご登録済みの方は<a href="https://cpass.eeasy.jp/cpass/20240522hp" target="_blank"
                         rel="noopener" class="menu__btnCaptionLink -td-u -color-primary">こちら</a></span>
             </div>
 

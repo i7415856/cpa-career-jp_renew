@@ -55,8 +55,8 @@ get_header(); ?>
 				<a href="https://ef.cpa-career.jp/CPASSCAREER_entryform/" target="_blank" rel="noopener" class="sec__btn">
 					<span class="sec__btnText">無料転職支援サービス<span class="-yel">お申し込み</span></span>
 				</a>
-				<span class="kv__btnCaption -pc-only">ご登録済みの方は<a href="https://cpass.eeasy.jp/cpass/2022090101" target="_blank" rel="noopener" class="kv__btnCaptionLink -td-u -color-primary">こちら</a></span>
-				<a class="kv__buttonPerson -yellow" href="https://cpass.eeasy.jp/cpass/2022090101" target="_blank" rel="noopener">ご登録済みの方は<span class="kv__buttonPersonText">こちら</span></a>
+				<span class="kv__btnCaption -pc-only">ご登録済みの方は<a href="https://cpass.eeasy.jp/cpass/20240522hp" target="_blank" rel="noopener" class="kv__btnCaptionLink -td-u -color-primary">こちら</a></span>
+				<a class="kv__buttonPerson -yellow" href="https://cpass.eeasy.jp/cpass/20240522hp" target="_blank" rel="noopener">ご登録済みの方は<span class="kv__buttonPersonText">こちら</span></a>
 			</p>
 		</div>
 	</section>
