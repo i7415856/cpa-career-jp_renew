@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+//____________________________
+// buttonType1のスタイル
+//____________________________
+.buttonType1 {
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	max-width: 32rem;
+	min-height: 6rem;
+	padding: 1.6rem 4rem;
+	text-align: center;
+	background-color: $primary;
+	border-radius: 10rem;
+
+	.buttonType1__text {
+		color: $black_000;
+		color: $white_fff;
+		font-size: responsiveValue(1.8rem, 1.6rem);
+		font-weight: 600;
+		line-height: 1.4;
+		letter-spacing: 0.05em;
+		text-align: center;
+		pointer-events: none;
+	}
+
+	.buttonType1__figure {
+		position: absolute;
+		top: 50%;
+		right: 2rem;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		transform: translate(0,-50%);;
+
+		@media #{$tab} {
+			width: 1.6rem;
+		}
+	}
+
+	//____________________________
+	// モディファイア
+	//____________________________
+	&.-back {
+		.buttonType1__figure {
+			position: absolute;
+			top: 50%;
+			right: auto;
+			left: 2rem;
+			transform: translate(0,-50%) rotate(-180deg);
+		}
+	}
+
+	&.-text-left {
+		.buttonType1__text {
+			text-align: left;
+		}
+	}
+}

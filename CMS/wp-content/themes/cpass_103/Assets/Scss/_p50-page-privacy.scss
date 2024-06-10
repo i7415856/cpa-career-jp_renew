@@ -1,0 +1,142 @@
+.-sec__detail {
+	.detail__block {
+		margin-bottom: 2.3rem;
+
+		.block__ttl {
+			padding-bottom: 0.1rem;
+			margin-bottom: 1.2rem;
+			color: $black_000;
+			font-size: 1.6rem;
+			font-weight: 700;
+			line-height: 2;
+			border-bottom: 0.1rem solid $primary;
+
+			@media #{$tab} {
+				padding-bottom: 0.3rem;
+				margin-bottom: 1.1rem;
+				font-size: 1.4rem;
+			}
+		}
+
+		.block__txt {
+			font-size: 1.6rem;
+			font-weight: 500;
+			line-height: 2;
+
+			@media #{$tab} {
+				font-size: 1.4rem;
+			}
+
+			.-tag {
+				@include transit;
+				display: inline-block;
+				padding: 0 1rem;
+				margin-right: 1rem;
+				color: $white_fff;
+				font-size: 1.4rem;
+				background: $black_333;
+				border-radius: 0.3rem;
+
+				@media #{$tab} {
+					padding: 0.2rem 1rem;
+					font-size: 1.2rem;
+				}
+
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+
+		.block__lst {
+			li {
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 2;
+
+				@media #{$tab} {
+					font-size: 1.4rem;
+				}
+			}
+
+			&.-lst01 {
+				li {
+					padding-left: 1.8rem;
+					text-indent: -1.8rem;
+
+					@media #{$tab} {
+						padding-left: 1.5rem;
+						text-indent: -1.5rem;
+					}
+				}
+			}
+
+			&.-lst02 {
+				li {
+					@media #{$pc-max} {
+						padding-left: 1.4rem;
+						text-indent: -1.8rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.pagePrivacy {
+	.pagePrivacy__detail {
+		padding: 7.7rem 0 7.1rem;
+
+		@media #{$tab} {
+			padding: 5.5rem 0 5.3rem;
+		}
+
+		.inner {
+			.detail__block {
+				&.-frame {
+					padding: 4.2rem 3rem 4.8rem;
+					margin: 6.4rem 0 3.5rem;
+					background: $white_f7f;
+
+					@media #{$tab} {
+						padding: 2.5rem 1.5rem 3rem;
+						margin: 2.7rem 0 2.3rem;
+					}
+				}
+
+				.block__txt {
+					.-tag {
+						font-size: 1.4rem;
+
+						span {
+							position: relative;
+							padding-left: 1.8rem;
+
+							&::after {
+								position: absolute;
+								top: 50%;
+								left: 0;
+								width: 1.3rem;
+								height: 1rem;
+								content: '';
+								background: url(../../Image/common/ico_envelope.svg) no-repeat center center / 100% auto;
+								transform: translateY(-50%);
+							}
+						}
+					}
+				}
+			}
+
+			.detail__note {
+				font-size: 1.6rem;
+				font-weight: 700;
+				line-height: 2;
+				text-align: right;
+
+				@media #{$tab} {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+}

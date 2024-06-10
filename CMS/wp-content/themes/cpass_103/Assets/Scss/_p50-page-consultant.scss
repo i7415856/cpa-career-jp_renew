@@ -1,0 +1,177 @@
+.pageConsultant {
+	.pageConsultant__infor {
+		padding-bottom: 9.8rem;
+
+		@media #{$tab} {
+			padding-top: 3rem;
+			padding-bottom: 5.8rem;
+		}
+
+		.inner {
+			.infor__txt {
+				margin-bottom: 5.5rem;
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 2;
+
+				@media #{$tab} {
+					margin-bottom: 7.9rem;
+					font-size: 1.4rem;
+					line-height: 1.9;
+				}
+			}
+
+			.infor__lst {
+				flex-wrap: wrap;
+				gap: 6rem 0;
+				display: flex;
+
+				@media #{$tab} {
+					gap: 2.8rem;
+				}
+
+				@at-root {
+					.consultantItem {
+						align-items: flex-start;
+						display: flex;
+						width: 50%;
+
+						@media (max-width: 900px) {
+							width: 100%;
+						}
+
+						@media #{$tab} {
+							gap: 1.3rem;
+						}
+
+						.item__img {
+							@include img_aspect_ratio(114%);
+							max-width: 26rem;
+							overflow: hidden;
+							background: $white_f2f;
+							border-radius: 0.3rem;
+
+							@media #{$tab} {
+								max-width: 14rem;
+							}
+						}
+
+						.item__cnt {
+							padding: 0 2.5rem;
+
+							@media #{$tab} {
+								padding: 0;
+							}
+
+							.cnt__ttl {
+								margin-bottom: 2.1rem;
+
+								@media #{$tab} {
+									margin-bottom: 1.4rem;
+								}
+							}
+
+							.cnt__ttlText {
+								display: inline;
+								padding: 0.5rem;
+								color: $white_fff;
+								font-size: 2rem;
+								font-weight: 700;
+								line-height: 1.75;
+								background-color: $primary;
+								box-decoration-break: clone;
+
+								@media #{$tab} {
+									padding: 0.3rem;
+									font-size: 1.4rem;
+								}
+							}
+
+							.cnt__position {
+								margin-bottom: 0.4rem;
+								font-size: 1.4rem;
+								font-weight: 500;
+								line-height: 1.7;
+								letter-spacing: 0.05rem;
+
+								@media #{$tab} {
+									margin-bottom: 0.1rem;
+									font-size: 1.2rem;
+									line-height: 1.2;
+								}
+							}
+
+							.cnt__name {
+								&.-jp {
+									margin-bottom: 0.2rem;
+									font-size: 2rem;
+									font-weight: 700;
+									line-height: 1.2;
+									letter-spacing: 0.05rem;
+
+									@media #{$tab} {
+										font-size: 1.6rem;
+									}
+								}
+
+								&.-en {
+									@include jost;
+									margin-bottom: 1.7rem;
+									font-size: 1.4rem;
+									font-weight: 300;
+									line-height: 1.7;
+									letter-spacing: 0.05rem;
+
+									@media #{$tab} {
+										margin-bottom: 1.2rem;
+										font-size: 1.2rem;
+										line-height: 1.2;
+									}
+								}
+							}
+
+							.cnt__specialty {
+								display: inline-block;
+								padding: 0 0.4rem;
+								margin-bottom: 0.3rem;
+								color: $primary;
+								font-size: 1.6rem;
+								font-weight: 700;
+								border: 0.1rem solid $primary;
+
+								@media #{$tab} {
+									padding: 0.3rem 0.4rem;
+									margin-bottom: 0.6rem;
+									font-size: 1.2rem;
+									line-height: 1.2;
+								}
+							}
+
+							.cnt__lst {
+								li {
+									position: relative;
+									padding-left: 1.6rem;
+									font-size: 1.6rem;
+									font-weight: 700;
+									line-height: 1.5;
+
+									@media #{$tab} {
+										font-size: 1.4rem;
+										line-height: 1.4;
+									}
+
+									&::before {
+										position: absolute;
+										top: 0;
+										left: 0;
+										content: '・';
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

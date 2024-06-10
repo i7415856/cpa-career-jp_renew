@@ -1,0 +1,625 @@
+.pageAbout {
+	padding-bottom: 12rem;
+	background-color: $gray_f7f;
+
+	.pages__breadcrumb {
+		.breadcrumb {
+			margin: 2rem 0 4rem;
+
+			@media #{$tab} {
+				margin: 2.7rem 0 4.5rem;
+			}
+
+			.breadcrumb__item {
+				.breadcrumb__link {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+
+	.about_secTtl {
+		@include YuMincho;
+		font-size: responsiveValue(3.8rem,2.8rem);
+		font-weight: 500;
+		line-height: 1.58;
+		letter-spacing: 0.05em;
+
+		@media #{$tab} {
+			line-height: 1.428;
+		}
+
+		.en {
+			@include eb;
+			display: block;
+			margin-bottom: 1.6rem;
+			color: $blue_00b;
+			font-size: responsiveValue(2.4rem,1.6rem);
+			line-height: 1;
+			letter-spacing: 0;
+			text-transform: uppercase;
+
+			@media #{$tab} {
+				margin-bottom: 2.2rem;
+			}
+		}
+	}
+
+	.about_kv {
+		padding-bottom: responsiveValue(16rem,6.4rem);
+
+		.inner {
+			position: relative;
+
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+		}
+
+		.kv_ttl {
+			@include eb;
+			padding-top: responsiveValue(8rem,4rem);
+			margin-bottom: responsiveValue(5rem,2.7rem);
+			color: $blue_00b;
+			font-size: responsiveValue(2.4rem,1.6rem);
+			line-height: 1;
+			text-transform: uppercase;
+
+			@media #{$tab} {
+				padding-top: 0;
+			}
+		}
+
+		.kv_txt {
+			width: 80.5%;
+
+			@media #{$tab} {
+				width: 100%;
+			}
+		}
+
+		.kv_bg {
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 0;
+			width: 69.35%;
+
+			@media #{$tab} {
+				top: 4rem;
+				right: 0.8rem;
+				width: 95.5vw;
+				max-width: 36rem;
+			}
+		}
+	}
+
+	.about_info {
+		padding: responsiveValue(11.5rem,3.2rem) 0 responsiveValue(17.5rem,7rem);
+		background: url(../../Image/about/about_bg.jpg) no-repeat 50% / cover;
+
+		@media #{$tab} {
+			background: url(../../Image/about/about_bg_sp.jpg) no-repeat 50% / cover;
+		}
+
+		.info_txt {
+			font-size: 1.6rem;
+			font-weight: 500;
+			line-height: 1.875;
+			letter-spacing: 0;
+			text-align: justify;
+			text-justify: inter-ideograph;
+
+			& + .info_txt {
+				margin-top: responsiveValue(3rem,2.5rem);
+			}
+
+			@media #{$tab} {
+				font-size: 1.4rem;
+			}
+		}
+
+		.info_head {
+			width: 53.2rem;
+			margin-bottom: responsiveValue(4rem,2rem);
+
+			@media #{$tab} {
+				width: 96.7%;
+			}
+		}
+
+		.info_box {
+			&.-box2 {
+				margin-top: responsiveValue(31.5rem,14.5rem);
+				color: $white_fff;
+			}
+		}
+	}
+
+	.about_reason {
+		padding: responsiveValue(20.5rem,8.3rem) 0 responsiveValue(20.5rem,8rem);
+		margin-bottom: responsiveValue(16.5rem,6.7rem);
+		background-color: $white_fff;
+
+		.reason_ttl {
+			margin-bottom: responsiveValue(11.3rem,6rem);
+			text-align: center;
+		}
+
+		.reason_item {
+			position: relative;
+			padding-right: 50%;
+			padding-left: 8.3%;
+
+			@media #{$tab} {
+				padding-right: 0;
+				padding-left: 0;
+			}
+
+			> * {
+				z-index: 3;
+			}
+		}
+
+		.reason_img {
+			position: absolute;
+			top: 12rem;
+			right: 2rem;
+			z-index: 1;
+			width: 42.5%;
+
+			@media #{$tab} {
+				position: relative;
+				top: 0;
+				right: 0;
+				width: 95.5%;
+				margin: 6.4rem auto 0;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.reason_no {
+			@include eb;
+			margin-bottom: responsiveValue(2rem,1rem);
+			font-size: responsiveValue(2.4rem,1.6rem);
+			line-height: 1;
+			text-transform: uppercase;
+
+			> span {
+				font-size: responsiveValue(3.2rem,2.4rem);
+			}
+		}
+
+		.reason_head {
+			@include YuMincho;
+			margin-bottom: responsiveValue(4.4rem,2.8rem);
+			font-size: responsiveValue(3.2rem,2rem);
+			font-weight: 500;
+			line-height: 1.75;
+			letter-spacing: 0.05em;
+			white-space: nowrap;
+
+			@media #{$tab} {
+				font-weight: 600;
+				line-height: 1.6;
+				letter-spacing: 0.03em;
+				white-space: inherit;
+			}
+
+			.reason_head_highlight {
+				border-bottom: 2px solid $primary;
+			}
+		}
+
+		.reason_txt {
+			display: inline;
+			font-size: responsiveValue(1.6rem,1.4rem);
+			font-weight: 500;
+			line-height: 1.875;
+
+			@media #{$tab} {
+				line-height: 1.857;
+			}
+		}
+
+		.reason_btn {
+			@include YuMincho;
+			@include transit;
+			position: relative;
+			align-items: center;
+			justify-content: space-between;
+			display: flex;
+			width: 100%;
+			height: 6.4rem;
+			max-width: 33.5rem;
+			padding: 0 3.2rem 0 2.4rem;
+			margin-top: responsiveValue(4rem,2rem);
+			color: $primary;
+			font-size: 2rem;
+			font-weight: 500;
+			border: 1px solid $primary;
+			border-radius: 500px;
+
+			&::after {
+				@include transit;
+				display: block;
+				width: 1rem;
+				height: 1rem;
+				content: '';
+				border: 2px solid $primary;
+				border-style: solid solid none none;
+				transform: rotate(45deg);
+			}
+
+			&:hover {
+				color: $white_fff;
+				background-color: $primary;
+
+				&::after {
+					border-color: $white_fff;
+				}
+			}
+
+			@media #{$tab} {
+				max-width: 100% ;
+			}
+		}
+
+		.reason_highlight {
+			@include eb;
+			position: absolute;
+			bottom: 0;
+			left: 8.3%;
+			z-index: 0;
+			color: $gray_f0f;
+			font-size: responsiveValue(12rem,5rem);
+			line-height: 0.83;
+			text-transform: uppercase;
+			white-space: nowrap;
+			pointer-events: none;
+
+			@media #{$tab} {
+				bottom: 38rem;
+				left: 0;
+			}
+		}
+
+		.reason_item {
+			&.-reason1 {
+				padding-bottom: responsiveValue(12.2rem,8rem);
+				margin-bottom: 9.6rem;
+
+				@media #{$tab} {
+					padding-bottom: 0;
+					margin-bottom: 6rem;
+				}
+			}
+
+			&.-reason2 {
+				padding-right: 8.3%;
+				padding-bottom: responsiveValue(17.5rem,8rem);
+				padding-left: 47%;
+				margin-bottom: 10.5rem;
+				text-align: right;
+
+				@media #{$tab} {
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0;
+					margin-bottom: 6rem;
+					text-align: left;
+				}
+
+				.reason_img {
+					top: 3.3rem;
+					right: auto;
+					left: 8.3%;
+					width: 34%;
+
+					@media #{$tab} {
+						top: 0;
+						left: 0;
+						width: 80%;
+						margin: 3rem auto 0;
+					}
+				}
+
+				.reason_txt {
+					margin-left: 3.5rem;
+
+					@media #{$tab} {
+						margin-left: 0;
+					}
+				}
+
+				.reason_btn {
+					margin-top: 4.5rem;
+					margin-left: auto;
+
+					@media #{$tab} {
+						margin-top: 6rem;
+					}
+				}
+
+				.reason_highlight {
+					right: 8.3%;
+					left: auto;
+					pointer-events: none;
+
+					@media #{$tab} {
+						bottom: 9rem;
+						left: 50%;
+						width: 100vw;
+						max-width: 100vw;
+						text-align: center;
+						transform: translateX(-50%);
+					}
+				}
+			}
+
+			&.-reason3 {
+				padding-bottom: responsiveValue(22rem,15rem);
+
+				@media #{$tab} {
+					padding-bottom: 0;
+				}
+
+				.reason_img {
+					top: 9rem;
+					right: 0;
+					width: 50%;
+
+					@media #{$tab} {
+						top: 0;
+						width: 100%;
+						margin: 3rem auto 0;
+					}
+				}
+
+				.reason_btn {
+					@media #{$tab} {
+						margin-top: 8.8rem;
+					}
+				}
+
+				.reason_highlight {
+					pointer-events: none;
+
+					@media #{$tab} {
+						bottom: 10rem;
+						left: 50%;
+						width: 100vw;
+						max-width: 100vw;
+						font-size: 4.3rem;
+						text-align: center;
+						transform: translateX(-50%);
+					}
+
+					@media screen and (max-width: 374px) {
+						font-size: 3.7rem;
+					}
+				}
+			}
+		}
+
+		.-js_more_ttl {
+			@include transit;
+			align-items: center;
+			gap: 0.4rem;
+			display: flex;
+			width: fit-content;
+			margin: 1rem auto 0;
+			font-size: 1.4rem;
+			font-weight: 500;
+			text-align: center;
+			border-bottom: 1px solid $black_1f1;
+
+			&:after {
+				display: block;
+				width: 0.4rem;
+				height: 0.4rem;
+				content: '';
+				border: 1px solid $black_1f1;
+				border-style: none solid solid none;
+				transform: rotate(45deg);
+			}
+
+			&.-active {
+				display: none;
+			}
+		}
+
+		.-js_more_cnt {
+			display: none;
+
+			&.-active {
+				display: inline;
+			}
+		}
+
+		.-js_more_dots {
+			@include transit;
+
+			&.-active {
+				display: none;
+			}
+		}
+	}
+
+	.about_flow {
+		margin-bottom: 12rem;
+
+		.flow_ttl {
+			margin-bottom: 2.5rem;
+
+			@media #{$tab} {
+				margin-bottom: 5.5rem;
+				text-align: center;
+			}
+
+			.en {
+				color: $black_1f1;
+
+				@media #{$tab} {
+					color: $primary;
+				}
+			}
+
+			.jp {
+				color: $primary;
+
+				@media #{$tab} {
+					color: $black_1f1;
+				}
+			}
+		}
+
+		.flow_list {
+			flex-direction: column;
+			display: flex;
+			margin: 0 5rem;
+
+			@media #{$tab} {
+				margin: 0 0 0 4rem;
+			}
+		}
+
+		.flow_item {
+			position: relative;
+			flex-direction: column;
+			justify-content: center;
+			display: flex;
+			height: 100%;
+			min-height: 20rem;
+			padding: 1rem 3.5rem 1rem 11rem;
+			margin-bottom: 1.6rem;
+			background-color: $white_fff;
+
+			@media #{$tab} {
+				min-height: 0;
+				padding: 1.2rem 3.5rem 1.2rem 5.5rem;
+			}
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		.flow_no {
+			@include eb;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			width: responsiveValue(10.4rem,8rem);
+			height: responsiveValue(10.4rem,8rem);
+			color: $primary;
+			font-size: responsiveValue(3.2rem,2.4rem);
+			line-height: 1;
+			background-color: $gray_f7f;
+			border: 1px solid $primary;
+			border-radius: 50%;
+			transform: translate(-50%,-50%);
+
+			@media #{$tab} {
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+
+		.flow_head {
+			@include YuMincho;
+			margin-bottom: 1rem;
+			font-size: responsiveValue(2.4rem,1.6rem);
+			font-weight: 500;
+			line-height: 1.75;
+
+			@media #{$tab} {
+				align-items: center;
+				display: flex;
+				margin-bottom: 0;
+			}
+		}
+
+		.flow_txt {
+			font-size: responsiveValue(1.6rem,1.4rem);
+			font-weight: 500;
+			line-height: 1.875;
+
+			@media #{$tab} {
+				line-height: 1.857;
+			}
+		}
+
+		.flow_link {
+			border-bottom: 1px solid $black_1f1;
+		}
+
+		.-js_collapse_ttl_sp {
+			position: relative;
+
+			@media #{$tab} {
+				&::after {
+					@include transit;
+					position: absolute;
+					top: 50%;
+					right: -1.7rem;
+					width: 1rem;
+					height: 1rem;
+					content: '';
+					border: 2px solid $primary;
+					border-style: none solid solid none;
+					transform: translateY(-50%) rotate(45deg);
+				}
+			}
+
+			&.-active {
+				&::after {
+					transform: translateY(-50%) rotate(45deg) scale(-1);
+				}
+			}
+		}
+
+		.-js_collapse_cnt_sp {
+			@media #{$tab} {
+				display: none;
+				margin-top: 1.5rem;
+			}
+		}
+	}
+}
+
+.about_cv {
+	.cv_head {
+		margin-bottom: 4rem;
+		font-size: responsiveValue(2.8rem,1.6rem);
+		font-weight: 700;
+		line-height: 1.428;
+		text-align: center;
+
+		@media #{$tab} {
+			line-height: 1.875;
+		}
+	}
+
+	.sec__btnWrap {
+		gap: 2.5rem;
+
+		.sec__btn {
+			@media #{$tab} {
+				border-radius: 0.3rem;
+			}
+		}
+
+		.sec__btnCaption {
+			font-size: 1.6rem;
+			font-weight: 700;
+		}
+	}
+}

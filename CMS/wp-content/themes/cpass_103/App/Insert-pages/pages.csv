@@ -1,0 +1,20 @@
+top	2nd	3rd	スラッグ	種類	親ページ	テンプレートファイル	scssファイル
+トップ			front	固定ページ		/Pages/page-front.php	/Assets/Scss/_p50-page-front.scss
+	運営会社		company	固定ページ		/Pages/page-company.php	/Assets/Scss/_p50-page-company.scss
+	お問い合わせ		contact	固定ページ		/Pages/page-contact.php	/Assets/Scss/_p50-page-contact.scss
+	プライバシーポリシー		privacypolicy	固定ページ		/Pages/page-privacypolicy.php	/Assets/Scss/_p50-page-privacypolicy.scss
+	人材紹介サービス利用規約		terms	固定ページ		/Pages/page-terms.php	/Assets/Scss/_p50-page-terms.scss
+	コンサルタント一覧		consultant	固定ページ		/Pages/page-consultant.php	/Assets/Scss/_p50-page-consultant.scss
+	コンサルタント詳細		consultant	シングルページ		/single-consultant.php	/Assets/Scss/_p50-single-consultant.scss
+	転職成功事例一覧		case	固定ページ		/Pages/page-case.php	/Assets/Scss/_p50-page-case.scss
+	転職成功事例詳細		case	シングルページ		/single-case.php	/Assets/Scss/_p50-single-case.scss
+	コラム		column	固定ページ		/Pages/page-column.php	/Assets/Scss/_p50-page-column.scss
+	コラム詳細			シングルページ		/single.php	/Assets/Scss/_p50-single.scss
+	ニュース 一覧		news	固定ページ		/Pages/page-news.php	/Assets/Scss/_p50-page-news.scss
+	ニュース 詳細		news	シングルページ		/single-news.php	/Assets/Scss/_p50-single-news.scss
+	FAQ一覧		faq	固定ページ		/Pages/page-faq.php	/Assets/Scss/_p50-page-faq.scss
+	FAQ 詳細		faq	シングルページ		/single-faq.php	/Assets/Scss/_p50-single-faq.scss
+	転職ノウハウ		knowhows	固定ページ		/Pages/page-knowhows.php	/Assets/Scss/_p50-page-knowhows.scss
+	転職ノウハウ		knowhow	シングルページ		/single-knowhow.php	/Assets/Scss/_p50-single-knowhow.scss
+	求人情報		recruit	固定ページ		/Pages/page-recruit.php	/Assets/Scss/_p50-page-recruit.scss
+	選ばれる理由		reasons	固定ページ		/Pages/page-reasons.php	/Assets/Scss/_p50-page-reasons.scss
