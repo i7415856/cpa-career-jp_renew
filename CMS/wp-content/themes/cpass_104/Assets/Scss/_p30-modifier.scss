@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+
+//____________________________
+// 単体のモディファイア
+//____________________________
+// ---------- PC SP 表示非表示切り替え ----------
+.-pc-only {
+	@media #{$tab} {
+		display: none;
+	}
+}
+
+.-sp-only {
+	display: none;
+
+	@media #{$tab} {
+		display: inline-block;
+	}
+}
+
+table.-sp-only {
+	display: none;
+
+	@media #{$tab} {
+		display: table;
+	}
+}
+
+.-sp-only-block {
+	display: none;
+
+	@media #{$tab} {
+		display: block;
+	}
+}
+
+// ---------- 中央揃え ----------
+.-tac {
+	text-align: center;
+}
+
+.-tar {
+	text-align: right;
+}
+
+// ---------- hover時のポインター ----------
+.-hover-pointer {
+	transition: 0.3s;
+
+	&:hover {
+		transition: 0.3s;
+		cursor: pointer;
+	}
+}
+
+.-color-red {
+	color: red;
+}
+
+// ---------- 白色 ----------
+.-color-white {
+	color: $white_fff;
+}
+
+// ---------- 背景 プライマリー ----------
+.-color-primary {
+	color: $primary;
+}
+
+// ---------- 背景 プライマリー ----------
+.-bg-primary {
+	background-color: $primary;
+}
+
+// ---------- 背景 白色 ----------
+.-bg-white {
+	background-color: $white_fff;
+}
+
+// ---------- flex ----------
+.-flex {
+	display: flex;
+}
+
+.-aic {
+	align-items: center;
+}
+
+.-jcfe {
+	justify-content: flex-end;
+}
+
+// ---------- 縦書き ----------
+.-tategaki {
+	-ms-writing-mode: tb-rl;
+	    writing-mode: vertical-rl;
+}
+
+.-position-sticky {
+	position: -webkit-sticky;
+	position:         sticky;
+	top: 0;
+}
+
+.-mh-100vh {
+	min-height: 100vh;
+}
+
+.-ws-nowrap {
+	white-space: nowrap;
+}
+
+.-td-u {
+	text-decoration: underline;
+}
+
+.-hide-scroll-bar {
+	-ms-overflow-style: none;    /* IE, Edge 対応 */
+	scrollbar-width: none;
+
+	/* Firefox 対応 */
+	&::-webkit-scrollbar {
+		/* Chrome, Safari 対応 */
+		display: none;
+	}
+}
+
+.-text-2-row {
+	display: -webkit-box;
+	overflow: hidden;
+
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}

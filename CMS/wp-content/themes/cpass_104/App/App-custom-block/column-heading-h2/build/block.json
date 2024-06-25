@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "vanilla-custom-block/column-heading-h2",
+  "version": "0.1.0",
+  "title": "見出し (h2)",
+  "category": "text",
+  "icon": "heading",
+  "description": "h2見出し",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2",
+      "default": "",
+      "__experimentalRole": "content"
+    }
+  },
+  "textdomain": "column-heading",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

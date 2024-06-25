@@ -1,0 +1,201 @@
+
+.singlePost {
+	.singlePostFlex {
+		display: flex;
+	}
+
+	.singlePostMain {
+		width: 100%;
+		padding-bottom: 10rem;
+
+		@media #{$tab} {
+			padding-bottom: 6rem;
+		}
+	}
+
+	//____________________________
+	// Head
+	//____________________________
+	.singlePostHead {
+		margin-bottom: 6rem;
+
+		@media #{$tab} {
+			margin-bottom: 4rem;
+		}
+
+		.singlePostHead__title {
+			margin-bottom: 1.8rem;
+			font-size: 3.6rem;
+			font-weight: 600;
+
+			@media #{$tab} {
+				margin-bottom: 0.8rem;
+				font-size: 2.4rem;
+			}
+		}
+
+		.singlePostHead__flex {
+			flex-wrap: wrap;
+			display: flex;
+		}
+
+		.singlePostHead__tagWrap {
+			display: inline-block;
+
+			@media #{$tab} {
+				width: 100%;
+				margin-bottom: 1rem;
+			}
+		}
+
+		.singlePostHead__tag {
+			display: inline-block;
+			padding: 0.6rem 1rem;
+			margin-right: 2rem;
+			color: $white_fff;
+			font-size: 1.2rem;
+			line-height: 1;
+			text-align: center;
+			background-color: $primary;
+
+			@media #{$tab} {
+				margin-right: 0;
+			}
+		}
+
+		.singlePostHead__text {
+			align-items: center;
+			gap: 0.5rem;
+			display: flex;
+			margin-right: 1.5rem;
+			font-size: 1.4rem;
+
+			@media #{$tab} {
+				margin-right: 0.5rem;
+				font-size: 1.3rem;
+			}
+		}
+
+		.singlePostHead__primaryText {
+			align-items: center;
+			gap: 0.5rem;
+			display: flex;
+			font-size: 1.5rem;
+
+			@media #{$tab} {
+				font-size: 1.3rem;
+			}
+
+			&::before {
+				display: inline-block;
+				width: 1.5rem;
+				height: 1.5rem;
+				content: '';
+				background-image: url(../../Image/common/icon_clock_primary_1.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+
+				@media #{$tab} {
+					width: 1.3rem;
+					height: 1.3rem;
+				}
+			}
+		}
+	}
+
+	//____________________________
+	// TOC
+	//____________________________
+	.singlePostTOC {
+		width: 100%;
+		margin-bottom: 6rem;
+
+		#ez-toc-container {
+			width: 100%;
+			max-width: 84rem;
+			padding: 4rem 6rem;
+			margin: 0 auto;
+			background-color: $white_f4f;
+
+			@media #{$tab} {
+				padding: 3rem 1.5rem;
+			}
+
+			ul {
+				margin-left: 0 !important;
+			}
+
+			.ez-toc-link {
+				width: 100%;
+				padding-bottom: 1rem;
+				margin-bottom: 2rem;
+				color: $black_000;
+				font-size: 1.6rem;
+				font-weight: 400;
+				text-decoration: none !important;
+				border-bottom: 0.1rem solid $primary;
+
+				@media #{$tab} {
+					padding-bottom: 1rem;
+					margin-bottom: 1.2rem;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+
+	//____________________________
+	// コンテンツ
+	//____________________________
+	.block__side {
+		@media #{$tab} {
+			display: none !important;
+		}
+	}
+
+	//____________________________
+	// 関連コラム
+	//____________________________
+	.singlePostColumns {
+		padding: 8rem 0;
+		margin-top: 10rem;
+		background-color: $white_f7f;
+
+		@media #{$tab} {
+			padding: 6rem 0;
+			margin-top: 6rem;
+		}
+
+		.singleConsultant__title {
+			align-items: center;
+			flex-direction: column;
+			gap: 2rem;
+			display: flex;
+			margin-bottom: 4rem;
+			font-size: 3rem;
+
+			@media #{$tab} {
+				font-size: 2.4rem;
+			}
+
+			&::after {
+				display: inline-block;
+				width: 5.2rem;
+				height: 0.2rem;
+				content: '';
+				background-color: $primary;
+			}
+		}
+
+		.singlePostColumns__list {
+			gap: 2rem;
+			display: flex;
+
+			@media #{$tab} {
+				flex-direction: column;
+				gap: 3rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+//____________________________
+// サンプル
+//____________________________
+.pageSample {
+	min-height: 100vh;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	background-color: $primary;
+
+	@media #{$tab} {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	.pageSample__pageTitle {
+		margin-bottom: 3.2rem;
+		font-size: 4rem;
+		text-align: center;
+
+		@media #{$tab} {
+			font-size: 3.2rem;
+		}
+	}
+
+	.pageSample__flex {
+		justify-content: space-between;
+		display: flex;
+
+		&:not(:last-child) {
+			margin-bottom: 8rem;
+		}
+
+		&.-reverse {
+			flex-direction: row-reverse;
+
+			@media #{$tab} {
+				flex-direction: column;
+			}
+		}
+
+		@media #{$tab} {
+			flex-direction: column;
+
+			&:not(:last-child) {
+				margin-bottom: 6.4rem;
+			}
+		}
+	}
+
+	.pageSample__figure {
+		width: 49%;
+		background-color: $lightgray_efe;
+
+		&.-bg-pink {
+			background-color: $primary;
+		}
+
+		&.-bg-blue {
+			background-color: $blue_0d7;
+		}
+
+		@media #{$tab} {
+			width: 100%;
+			padding-bottom: 53%;
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	.pageSample__desc {
+		width: 49%;
+
+		@media #{$tab} {
+			width: 100%;
+		}
+	}
+
+	.pageSample__title {
+		margin-bottom: 1rem;
+		font-size: 2.4rem;
+
+		@media #{$tab} {
+			font-size: 2rem;
+		}
+	}
+
+	.pageSample__text {
+		@media #{$tab} {
+			font-size: 1.2rem;
+		}
+	}
+}

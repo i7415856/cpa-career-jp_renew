@@ -1,0 +1,246 @@
+.pageSearchResult {
+	padding-bottom: 12rem;
+
+	.result_body {
+		padding-bottom: 12rem;
+	}
+
+	.result_ttl {
+		margin-bottom: 3rem;
+
+		@media #{$tab} {
+			margin: 5rem 0 2.5rem;
+		}
+	}
+
+	.search_form {
+		align-items: center;
+		gap: 3rem;
+		justify-content: space-between;
+		display: flex;
+		width: 100%;
+		max-width: 87rem;
+		margin: 0 auto responsiveValue(7rem,3.5rem);
+		border: 2px solid $primary;
+		border-radius: 4px;
+
+		@media #{$tab} {
+			flex-wrap: wrap;
+			gap: 2rem 0;
+			border: 0;
+		}
+
+		::placeholder {
+			color: $gray_d0d;
+			opacity: 1;
+		}
+
+		input[type=text] {
+			flex: 1;
+			padding: 0 responsiveValue(3rem,2rem);
+			font-size: responsiveValue(1.6rem,1.4rem);
+			font-weight: 700;
+			letter-spacing: 0.05em;
+			-webkit-appearance: none;
+			        appearance: none;
+			border: none;
+			border-radius: 4px;
+
+			@media #{$tab} {
+				width: calc(100% - 8.5rem);
+				height: 5.4rem;
+				border: 2px solid $primary;
+				border-style: solid none solid solid;
+				border-radius: 4px 0 0 4px;
+			}
+
+			&:focus ,
+			&:focus-visible {
+				outline: none;
+			}
+		}
+
+		button[type=submit] ,
+		input[type=submit] {
+			align-items: center;
+			gap: 0.8rem;
+			justify-content: center;
+			display: flex;
+			width: 13rem;
+			height: 5.6rem;
+			padding: 0;
+			color: $white_fff;
+			font-size: responsiveValue(2rem,1.6rem);
+			font-weight: 700;
+			-webkit-appearance: none;
+			        appearance: none;
+			background-color: $lightgreen_b7a;
+			border: none;
+			border-radius: 0 2px 2px 0;
+
+			@media #{$tab} {
+				gap: 0.5rem;
+				width: 8.5rem;
+				height: 5.4rem;
+				border: 2px solid $primary;
+				border-style: solid solid solid none;
+				border-radius: 0 4px 4px 0;
+			}
+
+			&::before {
+				display: block;
+				width: responsiveValue(2.3rem,1.7rem);
+				height: responsiveValue(2.3rem,1.7rem);
+				content: '';
+				background: url(../../Image/common/ico_search.svg) no-repeat 50% / contain;
+			}
+		}
+	}
+
+	.result_total {
+		align-items: flex-end;
+		flex-wrap: wrap;
+		display: flex;
+		margin-bottom: 2rem;
+		font-size: responsiveValue(1.8rem,1.4rem);
+		font-weight: 500;
+		line-height: 1.78;
+
+		@media #{$tab} {
+			margin-bottom: 5rem;
+		}
+
+		.keyword {
+			color: $primary;
+			font-size: responsiveValue(2.4rem,2rem);
+			font-weight: 700;
+			transform: translateY(4px);
+		}
+
+		&.-no-result {
+			align-items: center;
+			justify-content: center;
+
+			.keyword {
+				transform: translateY(0);
+			}
+		}
+	}
+
+	.result_list {
+		margin-bottom: responsiveValue(6rem,4rem);
+	}
+
+	.result_item {
+		gap: 6rem;
+		justify-content: space-between;
+		display: flex;
+		padding: 4rem 6rem 3rem 4rem;
+		margin-bottom: 3rem;
+		border: 2px solid $primary;
+		border-radius: 3px;
+
+		@media #{$tab} {
+			display: block;
+			padding: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.-highlight {
+			background-color: rgba(yellow, 0.4);
+		}
+	}
+
+	.item_img {
+		@include img_aspect_ratio(60%);
+		width: 100%;
+		max-width: 31rem;
+
+		@media #{$tab} {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.item_cnt {
+		flex: 1;
+
+		@media #{$tab} {
+			width: 100%;
+			padding: 1.5rem 1.4rem;
+		}
+	}
+
+	.item_head {
+		align-items: center;
+		justify-content: space-between;
+		display: flex;
+		margin-bottom: 1rem;
+
+		@media #{$tab} {
+			margin-bottom: 1.2rem;
+		}
+	}
+
+	.item_cat {
+		padding: 0.6rem 1rem;
+		color: $white_fff;
+		font-size: responsiveValue(1.6rem,1.2rem);
+		font-weight: 500;
+		line-height: 1;
+		background-color: $primary;
+	}
+
+	.item_date {
+		font-size: responsiveValue(1.6rem,1.2rem);
+		font-weight: 500;
+		line-height: 1;
+	}
+
+	.item_ttl {
+		display: -webkit-box;
+		margin-bottom: 2rem;
+		overflow: hidden;
+		font-size: responsiveValue(2rem,1.8rem);
+		font-weight: 700;
+		line-height: 1.5;
+
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+
+		@media #{$tab} {
+			margin-bottom: 1.2rem;
+			line-height: 1.44;
+		}
+	}
+
+	.item_txt {
+		display: -webkit-box;
+		overflow: hidden;
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 1.625;
+
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+
+	.about_cv {
+		.cv_head {
+			@media #{$tab} {
+				margin-bottom: 2.6rem;
+			}
+		}
+	}
+
+	.pageSearchResult__noResulText {
+		text-align: center;
+
+		@media #{$tab} {
+			text-align: left;
+		}
+	}
+}

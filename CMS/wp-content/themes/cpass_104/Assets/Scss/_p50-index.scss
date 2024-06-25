@@ -1,0 +1,330 @@
+.pageColumn {
+	.pageColumn__block {
+		padding-bottom: 10rem;
+
+		@media #{$tab} {
+			padding-bottom: 6rem;
+		}
+
+		@at-root {
+			.sidebarSectionWrap {
+				gap: 6rem;
+				display: flex;
+
+				@media (max-width: 1000px) {
+					gap: 2rem;
+				}
+
+				@media #{$tab} {
+					flex-direction: column-reverse;
+					gap: 5.7rem;
+				}
+			}
+
+			.block__side {
+				width: 20rem;
+				min-width: 20rem;
+
+				@media #{$tab} {
+					width: 100%;
+					min-width: 0;
+				}
+
+				.side__ttl {
+					margin-bottom: 1.1rem;
+					font-size: 2.4rem;
+					font-weight: 700;
+					line-height: 1.3;
+				}
+
+				.side__lst {
+					flex-direction: column;
+					gap: 0.2rem;
+					display: flex;
+
+					@media #{$tab} {
+						flex-direction: row;
+						flex-wrap: wrap;
+					}
+
+					.lst__item {
+						@media #{$tab} {
+							width: calc((100% - 0.2rem) /2);
+						}
+
+						a {
+							@include transit;
+							position: relative;
+							align-items: center;
+							display: flex;
+							width: 100%;
+							height: 100%;
+							min-height: 4.4rem;
+							padding: 0 2.2rem 0 1.5rem;
+							font-size: 1.4rem;
+							font-weight: 500;
+							line-height: 1.4;
+							background: $lightyellow_f7f;
+
+							&::after {
+								@include transit;
+								position: absolute;
+								top: 50%;
+								right: 1.5rem;
+								width: 0.7rem;
+								height: 5rem;
+								content: '';
+								background: url(../../Image/common/ico_arrow_gray.svg) no-repeat center center / 100% auto;
+								transform: translateY(-50%);
+							}
+
+							&.-active ,
+							&:hover {
+								color: $white_fff;
+								background: $black_333;
+
+								&::after {
+									background: url(../../Image/common/ico_arrow-white.svg) no-repeat center center / 100% auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.block__main {
+			width: calc(100% - 26rem);
+
+			@media (max-width: 1000px) {
+				width: calc(100% - 22rem);
+			}
+
+			@media #{$tab} {
+				width: 100%;
+			}
+
+			.main__lst {
+				flex-wrap: wrap;
+				gap: 3rem 2rem;
+				display: flex;
+				margin-bottom: 6rem;
+
+				@media #{$tab} {
+					padding: 0 1.7rem;
+					margin-bottom: 4rem;
+				}
+
+				@at-root {
+					.column__item {
+						width: calc((100% - 4rem) / 3 );
+						background: $white_fff;
+						border: 0.2rem solid $primary;
+						border-radius: 0.3rem;
+
+						@media (max-width: 1000px) {
+							width: calc((100% - 2rem) / 2 );
+						}
+
+						@media #{$tab} {
+							width: 100%;
+						}
+
+						.item__img {
+							height: 18rem;
+							overflow: hidden;
+							border-radius: 0.1rem 0.1rem 0 0;
+
+							@media #{$tab} {
+								height: 42.667vw;
+							}
+
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+
+						.item__cnt {
+							padding: 1.5rem 1.5rem 2rem;
+
+							p {
+								font-size: 1.2rem;
+								font-weight: 500;
+							}
+
+							.cnt__head {
+								align-items: center;
+								flex-wrap: wrap;
+								gap: 0.8rem;
+								justify-content: space-between;
+								display: flex;
+								margin-bottom: 0.8rem;
+
+								@media #{$tab} {
+									margin-bottom: 1.1rem;
+								}
+
+								.cnt__tag {
+									align-items: center;
+									display: flex;
+									height: 2.8rem;
+									padding: 0 1rem;
+									color: $white_fff;
+									background: $primary;
+								}
+
+								.cnt__date {
+									font-size: 1.3rem;
+									font-weight: 500;
+
+									@media #{$tab} {
+										font-size: 1.2rem;
+									}
+								}
+							}
+
+							.cnt__txt {
+								display: -webkit-box;
+								overflow: hidden;
+								font-size: 1.6rem;
+								font-weight: 700;
+								line-height: 1.6;
+								text-overflow: ellipsis;
+
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pageColumn__career {
+		padding: 7.1rem 0 8rem;
+		background: $lightyellow_f7f;
+
+		@media #{$tab} {
+			padding: 5.8rem 0 6rem;
+		}
+
+		.inner {
+			.career__ttl {
+				position: relative;
+				padding-bottom: 1.2rem;
+				margin-bottom: 5.5rem;
+				font-size: 3rem;
+				font-weight: 700;
+				letter-spacing: 0.05rem;
+				text-align: center;
+
+				@media #{$tab} {
+					padding-bottom: 1.7rem;
+					margin-bottom: 3.8rem;
+					font-size: 2.4rem;
+					line-height: 1.3;
+				}
+
+				&::after {
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					width: 5.2rem;
+					height: 0.2rem;
+					content: '';
+					background: $primary;
+					transform: translateX(-50%);
+				}
+			}
+
+			.career__txt {
+				width: 100%;
+				max-width: 90rem;
+				margin: 0 auto 2.9rem;
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 2;
+
+				@media #{$tab} {
+					margin-bottom: 2.2rem;
+					font-size: 1.4rem;
+					line-height: 1.9;
+				}
+			}
+
+			.career__frame {
+				height: 20rem;
+				max-width: 60rem;
+				padding: 1.5rem 0 2.7rem;
+				margin: 0 auto;
+				text-align: center;
+				background: url(../../Image/column/img_career.jpg) no-repeat center center / cover;
+
+				@media #{$tab} {
+					height: 11.3rem;
+					max-width: 33.5rem;
+					padding: 1rem 0 1.4rem;
+				}
+
+				.frame__logo {
+					width: 18.4rem;
+					margin: 0 auto 1rem;
+
+					@media #{$tab} {
+						width: 10.3rem;
+						margin: 0 auto 0.7rem;
+					}
+				}
+
+				.frame__btn {
+					@include transit;
+					position: relative;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					width: 21rem;
+					height: 3.6rem;
+					padding: 0 2.5rem;
+					margin: 0 auto;
+					font-size: 1.3rem;
+					font-weight: 700;
+					letter-spacing: 0.05rem;
+					text-align: center;
+					background: $white_fff;
+					border: 0.1rem solid $primary;
+					border-radius: 3.6rem;
+
+					@media #{$tab} {
+						width: 13rem;
+						height: 2rem;
+						font-size: 0.9rem;
+					}
+
+					&::after {
+						@include transit;
+						position: absolute;
+						top: 50%;
+						right: 1.5rem;
+						width: 1rem;
+						height: 1.1rem;
+						content: '';
+						background: url(../../Image/common/ico_link.svg) no-repeat center center / 100% auto;
+						transform: translateY(-50%);
+					}
+
+					&:hover {
+						color: $white_fff;
+						background: $primary;
+
+						&::after {
+							background: url(../../Image/common/ico_link_ov.svg) no-repeat center center / 100% auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
