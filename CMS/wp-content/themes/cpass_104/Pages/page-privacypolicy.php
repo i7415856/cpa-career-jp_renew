@@ -98,7 +98,7 @@ get_header(); ?>
 			<div class="detail__block -frame">
 				<h3 class="block__ttl">お問い合せ先</h3>
 				<p class="block__txt"><strong>CPAキャリアサポート株式会社</strong><br>〒160-0022 東京都新宿区 新宿3-14-20 新宿テアトルビル6F</p>
-				<p class="block__txt"><a class="-tag -poe-none"><span>お問い合わせはこちら</span></a><a href="mailto:cpass@cpa-net.jp">cpass@cpa-net.jp</a></p>
+				<p class="block__txt"><a class="-tag -poe-none"><span>お問い合わせはこちら</span></a><a href="mailto:cpass@cpa-net.jp" target="_blank" rel="noopener">cpass@cpa-net.jp</a></p>
 			</div>
 
 			<p class="detail__note">以上<br><br>2023年4月14日<br>CPAキャリアサポート株式会社<br>代表取締役　中園隼人</p>
