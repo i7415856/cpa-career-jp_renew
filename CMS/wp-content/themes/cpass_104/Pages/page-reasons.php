@@ -33,7 +33,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri() . '/' ?>Image/about/kv_txt.svg" alt="会計人材に特化すると、転職サービスはここまで変わる" class="-pc-only">
 				<img src="<?php echo get_template_directory_uri() . '/' ?>Image/about/kv_txt_sp.svg" alt="会計人材に特化すると、転職サービスはここまで変わる" class="-sp-only">
 			</figure>
-			<figure class="kv_bg"><img src="<?php echo get_template_directory_uri() . '/' ?>Image/about/kv_bg.png"></figure>
+			<figure class="kv_bg"><img src="<?php echo get_template_directory_uri() . '/' ?>Image/about/kv_bg.png" alt=""></figure>
 		</div>
 	</section>
 
@@ -73,7 +73,8 @@ get_header(); ?>
 					</div>
 
 					<div class="-sp-only">
-						<div class="reason_txt">私たちはCPA会計学院のOB・OGを含む約7,000人の会計士との強固なネットワークを誇ります。この独自のネットワークを活かし、他にはないオリジナル<span class="-js_more_dots">…</span><p class="-js_more_ttl">もっと読む</p><span class=" -js_more_cnt">求人を数多くご紹介することが可能です。私たちは「学び」「キャリア」「交流」の3つの領域から、総合的に皆様をサポートするインフラ企業として、ハイクラスな求人情報を豊富に取り揃えています。このような充実したサポート体制により、皆様に質の高いキャリアチャンスを提供することができます。</span>
+						<div class="reason_txt">私たちはCPA会計学院のOB・OGを含む約7,000人の会計士との強固なネットワークを誇ります。この独自のネットワークを活かし、他にはないオリジナル<span class="-js_more_dots">…</span>
+						<p class="-js_more_ttl">もっと読む</p><span class=" -js_more_cnt">求人を数多くご紹介することが可能です。私たちは「学び」「キャリア」「交流」の3つの領域から、総合的に皆様をサポートするインフラ企業として、ハイクラスな求人情報を豊富に取り揃えています。このような充実したサポート体制により、皆様に質の高いキャリアチャンスを提供することができます。</span>
 						</div>
 					</div>
 
@@ -91,7 +92,8 @@ get_header(); ?>
 					</div>
 
 					<div class="-sp-only">
-						<div class="reason_txt">CPASSキャリアの強みは、会計人材に特化した一流コンサルタントによる徹底サポートです。プロフェッショナルファームや一般事業会社の会計職など、<span class="-js_more_dots">…</span><p class="-js_more_ttl">もっと読む</p><span class="-js_more_cnt">各分野に精通したコンサルタントが多数在籍。人材紹介歴20年以上のコンサルタントや公認会計士資格を有するコンサルタントが、業界情報や人脈を駆使し、皆様の転職を支援します。</span>
+						<div class="reason_txt">CPASSキャリアの強みは、会計人材に特化した一流コンサルタントによる徹底サポートです。プロフェッショナルファームや一般事業会社の会計職など、<span class="-js_more_dots">…</span>
+						<p class="-js_more_ttl">もっと読む</p><span class="-js_more_cnt">各分野に精通したコンサルタントが多数在籍。人材紹介歴20年以上のコンサルタントや公認会計士資格を有するコンサルタントが、業界情報や人脈を駆使し、皆様の転職を支援します。</span>
 						</div>
 					</div>
 
