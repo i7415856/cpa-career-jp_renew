@@ -148,7 +148,7 @@
 				</ul>
 				<ul class="menu__lst">
 					<li class="lst__item">
-						<a href="<?php echo home_url("/contact/"); ?>" >
+						<a href="<?php echo home_url("/contact/"); ?>" target="_blank" rel="noopener">
 							お問い合わせ
 						</a>
 					</li>
@@ -295,7 +295,7 @@
 
 					<ul class="menu__lst -fz-small">
 						<li class="lst__item">
-							<a href="<?php echo home_url("/contact/"); ?>" >
+							<a href="<?php echo home_url("/contact/"); ?>" target="_blank" rel="noopener">
 								お問い合わせ
 							</a>
 						</li>
