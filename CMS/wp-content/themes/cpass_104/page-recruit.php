@@ -222,10 +222,10 @@ get_header(); ?>
 
 			<div class="others_box">
 				<h4 class="box_ttl">非公開求人とは<span class="-yel">サイト上で<br class="-sp-only">公開されない求人</span>です。</h4>
-				<p class="box_txt">いと考えていたときに、たまたま父親が手術を受けたのですが、かなり痛そうに見えました。でもその後、良く<br class="-pc-only">
-					なっていくのを見て、医師はこういう形で病気から回復する患者さんに携われる職業なのだと思いました。当時<br class="-pc-only">
-					は子どもに何かを教えるのは未来があるようでいいなという気持ちから、教師にも憧れていたのですが、人間を<br class="-pc-only">
-					知りたいということと父の病気といった経験がうまくマッチして、医師を目</p>
+				<p class="box_txt">
+					非公開求人に関して、CPASSキャリアおサービスへ無料登録をしていただきましたらご紹介いたします。<br>
+					現状、掲載されている求人では満足いかない場合でも、非公開求人であればあなたに合った求人に出会えるかもしれません。
+				</p>
 			</div>
 
 			<a href="https://ef.cpa-career.jp/CPASSCAREER_entryform/" target="_blank" rel="noopener" class="others_btn sec__btn">
