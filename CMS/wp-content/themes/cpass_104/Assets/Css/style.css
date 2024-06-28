@@ -8800,7 +8800,7 @@ table.-sp-only {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 7rem;
+  height: 10rem;
   margin: 0 0 clamp(1.5rem, 1.4749262537vw, 2rem);
 }
 .pageRecruit .recruit_jobs .jobs_logo > img {
