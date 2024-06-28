@@ -46,7 +46,7 @@ get_header(); ?>
 
 			<div class="kv__popup">
 				<a href="https://cpa-career-new-journey.studio.site/" target="_blank" rel="noopener" class="sec__btn sec__btn--portal">
-					<span class="sec__btnText">公認会計士試験から<span class="-yel-underline">撤退</span>を<br class="-sp-only">
+					<span class="sec__btnText">公認会計士試験から<span class="-yel-underline">転向</span>を<br class="-sp-only">
 						考えている方はこちら</span>
 				</a>
 				<div class="xBtn"></div>
