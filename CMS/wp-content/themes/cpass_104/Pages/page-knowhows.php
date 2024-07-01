@@ -89,7 +89,7 @@ get_header(); ?>
 							</div>
 
 							<?php if (get_sub_field('knowhows_step_link')) { ?>
-								<a target="_blank" rel="noopener" href="<?php echo get_sub_field('knowhows_step_link') ?>" class="step_more sec__detail">もっと見る</a>
+								<a rel="noopener" href="<?php echo get_sub_field('knowhows_step_link') ?>" class="step_more sec__detail">もっと見る</a>
 							<?php } ?>
 						</div>
 					<?php } ?>
