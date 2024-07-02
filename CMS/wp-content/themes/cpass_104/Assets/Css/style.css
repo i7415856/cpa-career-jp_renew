@@ -11591,7 +11591,7 @@ table.-sp-only {
   display: flex;
 }
 .singleConsultant .singleConsultantHistory .singleConsultantHistory__itemYear {
-  min-width: 9rem;
+  min-width: 11rem;
   font-size: 1.8rem;
 }
 @media only screen and (max-width:768px) {
