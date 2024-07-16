@@ -3,10 +3,10 @@
 
         <h1 class="header__logo">
             <img src="<?php echo get_template_directory_uri()  ?>/Image/common/img_logo_red.svg"
-                alt="会計人材の転職サポート CPASS CAREER" class="">
+                alt="会計人材特化型 転職エージェント CPASS CAREER" class="">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri()  ?>/Image/common/img_logo_h.svg"
-                    alt="会計人材の転職サポート CPASS CAREER">
+                <img src="<?php echo get_template_directory_uri()  ?>/Image/common/img_logo_h_r1.svg"
+                    alt="会計人材特化型 転職エージェント CPASS CAREER">
             </a>
         </h1>
 
