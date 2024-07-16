@@ -14,9 +14,9 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website:http://ogp.me/ns/website#">
 	<?php require_once("./components/common.php") ?>
 
-	<title>会計人材の転職サポート｜<?php echo $page_title_end ?></title>
+	<title>会計人材特化型 転職エージェント<?php echo $page_title_end ?></title>
 	<meta property="og:url" content="<?php echo home_url() ?>" />
-	<meta property="og:title" content="会計人材の転職サポート｜<?php echo $page_title_end ?>" />
+	<meta property="og:title" content="会計人材特化型 転職エージェント｜<?php echo $page_title_end ?>" />
 	<meta property="og:description" content=" 公認会計士をはじめとした会計人のための転職支援サービス。実務経験の長いキャリアコンサルタントと、公認会計士のサポーターが協力しながら、あなたの転職をご支援いたします。非常勤や副業など様々な働き方までをご提案。" />
 
 	<?php require_once("./components/head.php") ?>
