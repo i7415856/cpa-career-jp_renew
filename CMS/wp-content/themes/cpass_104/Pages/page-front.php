@@ -319,7 +319,7 @@ get_header(); ?>
 			</div>
 
 			<div class="cpass__reasonsButtonWrap">
-				<a href="<?php echo home_url("/reasons/"); ?>" class="sec__detail">詳細はこちら</a>
+				<a href="https://www.cpa-learning.com/career-directory/" target="_blank" class="sec__detail">詳細はこちら</a>
 			</div>
 
 		</div>
