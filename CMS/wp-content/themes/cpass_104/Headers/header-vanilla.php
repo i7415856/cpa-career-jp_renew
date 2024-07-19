@@ -5,7 +5,7 @@
             <img src="<?php echo get_template_directory_uri()  ?>/Image/common/img_logo_red.svg"
                 alt="会計人材特化型 転職エージェント CPASS CAREER" class="">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri()  ?>/Image/common/img_logo_h_r1.svg"
+                <img src="<?php echo get_template_directory_uri()  ?>/Image/common/img_logo_h_r2.svg"
                     alt="会計人材特化型 転職エージェント CPASS CAREER">
             </a>
         </h1>

@@ -2170,7 +2170,7 @@ table.-sp-only {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: clamp(20rem, 25.0737463127vw, 34rem);
+  width: clamp(24rem, 25.0737463127vw, 34rem);
 }
 @media (max-width: 1250px) and (min-width: 769px) {
   #header .header__inner .header__logo {
