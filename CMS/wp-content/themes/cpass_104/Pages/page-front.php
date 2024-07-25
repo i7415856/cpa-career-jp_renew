@@ -13,9 +13,9 @@ get_header(); ?>
 	<section class="pageTop__kv">
 		<div class="kv__inr">
 			<h2 class="kv__ttl">
-				<img class="-pc-only" src="<?php echo get_template_directory_uri() . '/' ?>Image/Front/img_kv_ttl.svg" alt>
+				<img class="-pc-only" src="<?php echo get_template_directory_uri() . '/' ?>Image/Front/img_kv_ttl.svg" alt="">
 
-				<img class="-sp-only" src="<?php echo get_template_directory_uri() . '/' ?>Image/Front/img_kv_ttl_sp.svg" alt>
+				<img class="-sp-only" src="<?php echo get_template_directory_uri() . '/' ?>Image/Front/img_kv_ttl_sp.svg" alt="">
 			</h2>
 
 			<div class="kv__banner">
@@ -74,22 +74,22 @@ get_header(); ?>
 
 		<div class="company__slide swiper">
 			<div class="swiper-wrapper">
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_1.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_16.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_2.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_3.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_4.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_5.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_6.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_7.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_8.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_9.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_10.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_11.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_12.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_13.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_14.png" alt></div>
-				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_15.png" alt></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_1.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_16.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_2.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_3.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_4.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_5.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_6.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_7.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_8.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_9.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_10.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_11.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_12.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_13.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_14.png" alt=""></div>
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_15.png" alt=""></div>
 			</div>
 		</div>
 	</section>
@@ -196,7 +196,7 @@ get_header(); ?>
 				<a href="<?php echo home_url("/consultant/nakazono_hayato.html"); ?>" class="account__item">
 
 					<figure class="item__img">
-						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account01.jpg" alt>
+						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account01.jpg" alt="">
 					</figure>
 					<p class="item__ttl">
 						<span>3,000名以上の</span>
@@ -208,7 +208,7 @@ get_header(); ?>
 
 				<a href="<?php echo home_url("/consultant/komai_shigeru.html"); ?>" class="account__item">
 					<figure class="item__img">
-						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account02.jpg" alt>
+						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account02.jpg" alt="">
 					</figure>
 					<p class="item__ttl">
 						<span>心から納得できる</span>
@@ -220,7 +220,7 @@ get_header(); ?>
 
 				<a href="<?php echo home_url("/consultant/shimizu_tomomi.html"); ?>" class="account__item">
 					<figure class="item__img">
-						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account03.jpg" alt>
+						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account03.jpg" alt="">
 					</figure>
 					<p class="item__ttl">
 						<span>コンサルタント歴10年</span>
@@ -232,7 +232,7 @@ get_header(); ?>
 
 				<a href="<?php echo home_url("/consultant/sugai_go.html"); ?>" class="account__item">
 					<figure class="item__img">
-						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account04.jpg" alt>
+						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_account04.jpg" alt="">
 					</figure>
 					<p class="item__ttl">
 						<span>会計士だから</span>
@@ -306,7 +306,7 @@ get_header(); ?>
 					</p>
 					<p class="banner__note">中園 隼人監修<br>「会計人材のキャリア名鑑<br>（2023年5月発行）」</p>
 					<figure class="banner__img">
-						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_cpass01.png" alt>
+						<img src="<?php echo get_template_directory_uri() ?>/Image/Front/img_cpass01.png" alt="">
 					</figure>
 				</div>
 				<div class="banner__cnt">
