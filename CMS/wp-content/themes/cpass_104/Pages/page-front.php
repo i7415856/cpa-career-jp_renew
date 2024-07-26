@@ -74,6 +74,7 @@ get_header(); ?>
 
 		<div class="company__slide swiper">
 			<div class="swiper-wrapper">
+				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_orix.png" alt=""></div>
 				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_1.png" alt=""></div>
 				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_16.png" alt=""></div>
 				<div class="slide__item swiper-slide"><img src="<?php echo get_template_directory_uri() ?>/Image/Front/logo_2.png" alt=""></div>
